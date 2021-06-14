@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AppiumAUT>
+  <XCUIElementTypeApplication enabled="true" height="2436" label="app" name="app" type="XCUIElementTypeApplication" visible="true" width="1125" x="0" y="0">
+    <XCUIElementTypeWindow enabled="true" height="2436" type="XCUIElementTypeWindow" visible="true" width="1125" x="0" y="0">
+      <XCUIElementTypeOther enabled="true" height="2436" type="XCUIElementTypeOther" visible="true" width="1125" x="0" y="0">
+        <XCUIElementTypeButton enabled="true" height="26" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="412" x="357" y="2391"/>
+        <XCUIElementTypeButton enabled="true" height="44" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="152" x="487" y="2288"/>
+        <XCUIElementTypeButton enabled="true" height="45" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="151" x="938" y="2287"/>
+        <XCUIElementTypeButton enabled="true" height="45" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="116" x="730" y="2287"/>
+        <XCUIElementTypeButton enabled="true" height="45" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="115" x="282" y="2287"/>
+        <XCUIElementTypeButton enabled="true" height="44" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="78" x="74" y="2287"/>
+        <XCUIElementTypeButton enabled="true" height="70" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="74" x="524" y="2211"/>
+        <XCUIElementTypeButton enabled="true" height="73" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="75" x="749" y="2210"/>
+        <XCUIElementTypeButton enabled="true" height="74" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="74" x="975" y="2209"/>
+        <XCUIElementTypeButton enabled="true" height="77" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="53" x="311" y="2208"/>
+        <XCUIElementTypeButton enabled="true" height="75" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="77" x="74" y="2208"/>
+        <XCUIElementTypeButton enabled="true" height="67" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="74" x="998" y="2057"/>
+        <XCUIElementTypeButton enabled="true" height="57" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="95" x="399" y="2013"/>
+        <XCUIElementTypeButton enabled="true" height="45" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="123" x="399" y="1963"/>
+        <XCUIElementTypeButton enabled="true" height="43" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="54" x="1071" y="1960"/>
+        <XCUIElementTypeButton enabled="true" height="37" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="55" x="1070" y="1918"/>
+        <XCUIElementTypeButton enabled="true" height="55" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="190" x="401" y="1905"/>
+        <XCUIElementTypeButton enabled="true" height="337" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="1125" x="0" y="1868">
+          <XCUIElementTypeButton enabled="true" height="312" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="294" x="50" y="1879">
+            <XCUIElementTypeButton enabled="true" height="57" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="95" x="65" y="2013"/>
+          </XCUIElementTypeButton>
+          <XCUIElementTypeButton enabled="true" height="313" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="293" x="718" y="1878">
+            <XCUIElementTypeButton enabled="true" height="57" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="95" x="733" y="2013"/>
+            <XCUIElementTypeButton enabled="true" height="94" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="247" x="737" y="1910"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeButton>
+        <XCUIElementTypeButton enabled="true" height="319" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="1125" x="0" y="1541">
+          <XCUIElementTypeButton enabled="true" height="214" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="375" x="731" y="1625">
+            <XCUIElementTypeButton enabled="true" height="103" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="323" x="749" y="1711"/>
+            <XCUIElementTypeButton enabled="true" height="54" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="292" x="748" y="1651"/>
+          </XCUIElementTypeButton>
+          <XCUIElementTypeButton enabled="true" height="214" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="371" x="25" y="1625">
+            <XCUIElementTypeButton enabled="true" height="44" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="88" x="289" y="1770"/>
+            <XCUIElementTypeButton enabled="true" height="54" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="193" x="183" y="1651"/>
+          </XCUIElementTypeButton>
+          <XCUIElementTypeButton enabled="true" height="274" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="260" x="433" y="1564">
+            <XCUIElementTypeButton enabled="true" height="221" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="250" x="439" y="1604"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeButton>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="195" x="864" y="1467"/>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="201" x="594" y="1467"/>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="200" x="328" y="1467"/>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="199" x="62" y="1467"/>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="618" y="1292"/>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="351" y="1292"/>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="85" y="1292"/>
+        <XCUIElementTypeButton enabled="true" height="161" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="162" x="876" y="1282"/>
+        <XCUIElementTypeButton enabled="true" height="54" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="167" x="78" y="1193"/>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="199" x="862" y="1191"/>
+        <XCUIElementTypeButton enabled="true" height="56" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="199" x="596" y="1191"/>
+        <XCUIElementTypeButton enabled="true" height="55" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="168" x="344" y="1191"/>
+        <XCUIElementTypeButton enabled="true" height="152" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="884" y="1016"/>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="618" y="1016">
+          <XCUIElementTypeButton enabled="true" height="116" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="117" x="637" y="1033">
+            <XCUIElementTypeButton enabled="true" height="101" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="81" x="654" y="1039"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeButton>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="351" y="1016"/>
+        <XCUIElementTypeButton enabled="true" height="151" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="153" x="85" y="1016"/>
+        <XCUIElementTypeButton enabled="true" height="98" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="34" x="0" y="797"/>
+        <XCUIElementTypeButton enabled="true" height="411" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="35" x="1090" y="488"/>
+        <XCUIElementTypeButton enabled="true" height="294" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="34" x="0" y="488"/>
+        <XCUIElementTypeButton enabled="true" height="534" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="1029" x="48" y="438">
+          <XCUIElementTypeButton enabled="true" height="334" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="206" x="861" y="448"/>
+          <XCUIElementTypeButton enabled="true" height="491" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="1009" x="58" y="448"/>
+        </XCUIElementTypeButton>
+        <XCUIElementTypeButton enabled="true" height="18" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="175" x="0" y="402"/>
+        <XCUIElementTypeButton enabled="true" height="44" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="71" x="1025" y="317"/>
+        <XCUIElementTypeButton enabled="true" height="62" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="121" x="651" y="308"/>
+        <XCUIElementTypeButton enabled="true" height="63" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="120" x="481" y="307"/>
+        <XCUIElementTypeButton enabled="true" height="63" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="236" x="194" y="307"/>
+        <XCUIElementTypeButton enabled="true" height="63" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="120" x="24" y="307"/>
+        <XCUIElementTypeButton enabled="true" height="162" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="1125" x="0" y="258"/>
+        <XCUIElementTypeButton enabled="true" height="16" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="70" x="32" y="208"/>
+        <XCUIElementTypeButton enabled="true" height="38" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="91" x="157" y="200"/>
+        <XCUIElementTypeButton enabled="true" height="16" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="70" x="32" y="190"/>
+        <XCUIElementTypeButton enabled="true" height="16" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="70" x="32" y="172"/>
+        <XCUIElementTypeButton enabled="true" height="65" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="65" x="1025" y="166"/>
+        <XCUIElementTypeButton enabled="true" height="37" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="91" x="157" y="158"/>
+        <XCUIElementTypeButton enabled="true" height="120" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="672" x="309" y="129">
+          <XCUIElementTypeButton enabled="true" height="100" label="2ndLayer" type="XCUIElementTypeButton" visible="true" width="652" x="319" y="139">
+            <XCUIElementTypeButton enabled="true" height="48" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="48" x="325" y="166"/>
+            <XCUIElementTypeButton enabled="true" height="69" label="3rdLayer" type="XCUIElementTypeButton" visible="true" width="45" x="900" y="156"/>
+          </XCUIElementTypeButton>
+        </XCUIElementTypeButton>
+        <XCUIElementTypeButton enabled="true" height="38" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="56" x="943" y="51"/>
+        <XCUIElementTypeButton enabled="true" height="42" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="61" x="877" y="48"/>
+        <XCUIElementTypeButton enabled="true" height="44" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="127" x="76" y="47"/>
+        <XCUIElementTypeButton enabled="true" height="46" label="outerLayer" type="XCUIElementTypeButton" visible="true" width="85" x="1003" y="46"/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeWindow>
+  </XCUIElementTypeApplication>
+</AppiumAUT>

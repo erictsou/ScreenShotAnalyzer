@@ -1,0 +1,49 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@text": "1010!",
+    "_EA@name": "1010!",
+    "_EA@class": [
+        "XCUIElementTypeApplication",
+        "set"
+    ],
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_NLP@topic": "register",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": []
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": []
+        }
+    ]
+}
