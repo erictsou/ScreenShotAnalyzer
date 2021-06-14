@@ -45,9 +45,9 @@
                     "byVision": true,
                     "x": 70,
                     "y": 45,
-                    "width": 140,
+                    "width": 139,
                     "height": 48,
-                    "_EA@text": "03:56",
+                    "_EA@text": "03:55",
                     "child": []
                 }
             ]
@@ -59,11 +59,25 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 68,
-            "y": 124,
-            "width": 471,
-            "height": 258,
+            "x": 45,
+            "y": 185,
+            "width": 1039,
+            "height": 134,
             "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "img",
+                    "byVision": true,
+                    "x": 950,
+                    "y": 185,
+                    "width": 134,
+                    "height": 134,
+                    "_EA@text": "",
+                    "child": []
+                },
                 {
                     "_EA@isEnabled": true,
                     "_EA@class": "XCUIElementTypeButton",
@@ -71,11 +85,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 68,
-                    "y": 124,
-                    "width": 471,
-                    "height": 258,
-                    "_EA@text": "41",
+                    "x": 45,
+                    "y": 195,
+                    "width": 219,
+                    "height": 113,
+                    "_EA@text": "\u6211\u7684",
                     "child": []
                 }
             ]
@@ -87,10 +101,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 65,
-            "y": 393,
-            "width": 632,
-            "height": 184,
+            "x": 6,
+            "y": 459,
+            "width": 1069,
+            "height": 181,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -99,11 +113,53 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 65,
-                    "y": 393,
-                    "width": 632,
-                    "height": 184,
-                    "_EA@text": "\u660f\u8ff7\u6307\u6578GCS NightKeepers\u5b88\u591c\u4eba 42",
+                    "x": 6,
+                    "y": 459,
+                    "width": 267,
+                    "height": 181,
+                    "_EA@text": "\u56de",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "byVision": true,
+                    "x": 330,
+                    "y": 459,
+                    "width": 181,
+                    "height": 181,
+                    "_EA@text": "\u500b\u4eba\u9801\u9762",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "byVision": true,
+                    "x": 633,
+                    "y": 459,
+                    "width": 137,
+                    "height": 181,
+                    "_EA@text": "\u8ffd\u8e64\u4e2d",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "byVision": true,
+                    "x": 892,
+                    "y": 459,
+                    "width": 183,
+                    "height": 181,
+                    "_EA@text": "\u64ad\u653e\u7d00\u9304",
                     "child": []
                 }
             ]
@@ -115,10 +171,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 588,
-            "width": 569,
-            "height": 184,
+            "x": 40,
+            "y": 736,
+            "width": 994,
+            "height": 376,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -127,11 +183,39 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 588,
-                    "width": 569,
-                    "height": 184,
-                    "_EA@text": "Love 43",
+                    "x": 40,
+                    "y": 736,
+                    "width": 327,
+                    "height": 376,
+                    "_EA@text": "LIKES",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "byVision": true,
+                    "x": 384,
+                    "y": 851,
+                    "width": 75,
+                    "height": 42,
+                    "_EA@text": "Eric",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "img",
+                    "byVision": true,
+                    "x": 916,
+                    "y": 865,
+                    "width": 118,
+                    "height": 118,
+                    "_EA@text": "",
                     "child": []
                 }
             ]
@@ -143,10 +227,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 783,
-            "width": 691,
-            "height": 184,
+            "x": 383,
+            "y": 792,
+            "width": 205,
+            "height": 59,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -155,11 +239,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 783,
-                    "width": 691,
-                    "height": 184,
-                    "_EA@text": "\u8209\u5200\u81ea\u76e1 ft. 44",
+                    "x": 383,
+                    "y": 792,
+                    "width": 205,
+                    "height": 59,
+                    "_EA@text": "\u6211\u7684\u559c\u6b61",
                     "child": []
                 }
             ]
@@ -171,10 +255,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 978,
-            "width": 400,
-            "height": 184,
+            "x": 381,
+            "y": 981,
+            "width": 91,
+            "height": 82,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -183,11 +267,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 978,
-                    "width": 400,
-                    "height": 184,
-                    "_EA@text": "\u8f15\u8f15 \u9673\u5afb\u975c",
+                    "x": 381,
+                    "y": 981,
+                    "width": 91,
+                    "height": 82,
+                    "_EA@text": "1",
                     "child": []
                 }
             ]
@@ -199,10 +283,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 1173,
-            "width": 620,
-            "height": 183,
+            "x": 40,
+            "y": 1126,
+            "width": 994,
+            "height": 376,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -211,11 +295,25 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 1173,
-                    "width": 620,
-                    "height": 183,
-                    "_EA@text": "\u76f4\u5230\u6211\u9047\u898b\u4e86\u4f60 46",
+                    "x": 40,
+                    "y": 1126,
+                    "width": 327,
+                    "height": 376,
+                    "_EA@text": "~\u2122 OFFLINE",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "img",
+                    "byVision": true,
+                    "x": 916,
+                    "y": 1255,
+                    "width": 118,
+                    "height": 118,
+                    "_EA@text": "",
                     "child": []
                 }
             ]
@@ -227,10 +325,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 65,
-            "y": 1368,
-            "width": 848,
-            "height": 184,
+            "x": 384,
+            "y": 1182,
+            "width": 202,
+            "height": 101,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -239,11 +337,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 65,
-                    "y": 1368,
-                    "width": 848,
-                    "height": 184,
-                    "_EA@text": "47",
+                    "x": 384,
+                    "y": 1182,
+                    "width": 202,
+                    "height": 101,
+                    "_EA@text": "\u96e2\u7dda\u6b4c\u66f2 Eric",
                     "child": []
                 }
             ]
@@ -255,10 +353,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 1563,
-            "width": 561,
-            "height": 184,
+            "x": 381,
+            "y": 1371,
+            "width": 161,
+            "height": 82,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -267,11 +365,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 1563,
-                    "width": 561,
-                    "height": 184,
-                    "_EA@text": "48",
+                    "x": 381,
+                    "y": 1371,
+                    "width": 161,
+                    "height": 82,
+                    "_EA@text": "(0/25)",
                     "child": []
                 }
             ]
@@ -283,10 +381,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 64,
-            "y": 1758,
-            "width": 584,
-            "height": 184,
+            "x": 54,
+            "y": 1547,
+            "width": 652,
+            "height": 110,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -295,11 +393,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 64,
-                    "y": 1758,
-                    "width": 584,
-                    "height": 184,
-                    "_EA@text": "49",
+                    "x": 54,
+                    "y": 1547,
+                    "width": 652,
+                    "height": 110,
+                    "_EA@text": "\u4f60\u9084\u6c92\u6709\u6b4c\u55ae\u5462 \u65b0\u5efa\u500b\u6b4c\u55ae\u4f86\u6574\u7406\u60f3\u807d\u7684\u97f3\u6a02\u5427",
                     "child": []
                 }
             ]
@@ -311,10 +409,10 @@
             "_EA@isClickable": false,
             "tag": "div",
             "byVision": true,
-            "x": 66,
-            "y": 1953,
-            "width": 679,
-            "height": 184,
+            "x": 90,
+            "y": 1736,
+            "width": 244,
+            "height": 56,
             "child": [
                 {
                     "_EA@isEnabled": true,
@@ -323,11 +421,11 @@
                     "_EA@isClickable": true,
                     "tag": "button",
                     "byVision": true,
-                    "x": 66,
-                    "y": 1953,
-                    "width": 679,
-                    "height": 184,
-                    "_EA@text": "HowZ",
+                    "x": 90,
+                    "y": 1736,
+                    "width": 244,
+                    "height": 56,
+                    "_EA@text": "\u65b0\u5efa\u6b4c\u55ae +",
                     "child": []
                 }
             ]
@@ -341,7 +439,7 @@
             "byVision": true,
             "x": 75,
             "y": 2207,
-            "width": 975,
+            "width": 974,
             "height": 126,
             "child": [
                 {
@@ -381,7 +479,7 @@
                     "byVision": true,
                     "x": 974,
                     "y": 2207,
-                    "width": 76,
+                    "width": 75,
                     "height": 126,
                     "_EA@text": "\u6211\u7684",
                     "child": []
