@@ -3,6 +3,7 @@ from imp import reload
 import sys
 import cv2
 import numpy as np
+from  matplotlib import pyplot as plt
 
 from getContourInfo import *
 reload(sys.modules['getContourInfo'])
@@ -32,8 +33,11 @@ from combineContour import *
 
 from PIL import Image, ImageDraw, ImageFont
 
-def allProcess(IMAGE_NUMBER):
-    img = cv2.imread('iosScreenshot/IMG_'+IMAGE_NUMBER+'.png', 1)
+def allProcess(IMAGE_NUMBER, experiment):
+    if not(experiment):
+        img = cv2.imread('iosScreenshot/IMG_'+IMAGE_NUMBER+'.png', 1)
+    else:
+        img = cv2.imread('experiment/'+IMAGE_NUMBER+'.png', 1)
     height,width,_ = img.shape
 
     print('image size: ', height, '*', width)
@@ -75,7 +79,7 @@ def allProcess(IMAGE_NUMBER):
         cv2.rectangle(clone, (x, y), (x + w, y + h), (0, 255, 0), 2)
         #長方形框出contour
 
-    cv2.imwrite('result/'+IMAGE_NUMBER+'.png', clone)
+    if not(experiment): cv2.imwrite('result/'+IMAGE_NUMBER+'.png', clone)
 
     #利用hierarchy 資訊篩選重要的contours
     #print(result)
@@ -89,7 +93,7 @@ def allProcess(IMAGE_NUMBER):
         cv2.rectangle(clone2, (x, y), (x + w, y + h), (0, 255, 0), 2)
         cv2.putText(clone2, str(c[0][0]), (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-    cv2.imwrite('result/better_'+IMAGE_NUMBER+'.png', clone2)
+    if not(experiment): cv2.imwrite('result/better_'+IMAGE_NUMBER+'.png', clone2)
 
 
 
@@ -148,7 +152,8 @@ def allProcess(IMAGE_NUMBER):
         cv2.putText(clone4, str(c[0][0]), (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
 
-    cv2.imwrite('result/combined_'+IMAGE_NUMBER+'.jpg', clone4)
+    if not(experiment): cv2.imwrite('result/combined_'+IMAGE_NUMBER+'.jpg', clone4)
+        
 
 
     clone5 = img.copy()
@@ -167,11 +172,13 @@ def allProcess(IMAGE_NUMBER):
             draw.text((x, y), c[2][0], (0, 0, 0), font=fontText)
 
 
-    pil5.save('result/contour&text_'+IMAGE_NUMBER+'.jpg')
+    if not(experiment): pil5.save('result/contour&text_'+IMAGE_NUMBER+'.jpg')
 
     clone6 = img.copy()
     mainDict, temp = generateJsonDict('test.json',img, contourInfo_new, sizeOG, clone6)
     print('temp length: ', len(temp))
-    cv2.imwrite('result/secondLayer_'+IMAGE_NUMBER+'.jpg', clone6)
+    if not(experiment): cv2.imwrite('result/secondLayer_'+IMAGE_NUMBER+'.jpg', clone6)
+
+    return contourInfo_new
 
 

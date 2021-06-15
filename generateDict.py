@@ -5,7 +5,7 @@ import cv2
 def addDict(elementType, tag, label, coordinate):
     x,y,w,h = coordinate
     a = {"_EA@isEnabled": True, "_EA@class": elementType, "_EA@isHidden": False, "_EA@isClickable": True, 
-         "tag": tag, "byVision": True, "x": x, "y": y, "width": w, "height": h, "_EA@text": label, "child":[]}
+        "tag": tag, "op": "click", "_TaaD::byVision": True, "x": x, "y": y, "width": w, "height": h, "_EA@text": label, "child":[]}
     return a
     
 def generateJsonDict(filename, img, info, sizeOG, clone6):
@@ -13,16 +13,9 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
     f,l = (widthOG*0.01,heightOG*0.01) if widthOG<heightOG else (heightOG*0.01,widthOG*0.01)
 
     height,width,_ = img.shape
-    # appName = "app"
-    # mainDict = {"hierarchyDict":{}}
-    
-    # app = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeApplication", "_EA@isHidden": False, "_EA@isClickable": False, 
-    #        "tag": "div", "positionX": 0, "positionY": 0, "width": w, "height": h, 
-    #        "_EA@text": appName, "_EA@name": appName, "child":[]}
     outerLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
-              "tag": "ol", "byVision": True, "x": 0, "y": 0, "width": width, "height": height, "child":[]}
-    # other = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
-    #          "tag": "div", "positionX": 0, "positionY": 0, "width": w, "height": h, "child":[]}
+                "tag": "ol", "_TaaD::byVision": True, "x": 0, "y": 0, "width": width, "height": height, "child":[]}
+
 
     secondLayerList = []
     cnt2=0
@@ -75,7 +68,7 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
         coordinate = [x_low, y_low, x_upp-x_low, y_upp-y_low]
         cv2.rectangle(clone6, (x_low, y_low), (x_upp, y_upp), (0, 255, 0), 2)
         secondLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
-                        "tag": "div", "byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
+                    "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
         
 
         for c in second:
@@ -92,7 +85,10 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                 if c[2][1]>=70: 
                     print('text: ',c[2])
                     inner_1st = addDict("XCUIElementTypeButton","button",c[2][0],c[1])
-                else: inner_1st = addDict("XCUIElementTypeButton","img","",c[1])
+                else: 
+                    inner_1st = addDict("XCUIElementTypeButton","button","",c[1])
+                    inner_1st.pop("_EA@text", None)
+                    inner_1st["_TaaD::imageToBeClipped"] = True
                     
                 for i_2nd, c_2nd in enumerate(second):
                     
@@ -103,7 +99,10 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                         if c[2][1]>=70: 
                             print('text: ',c_2nd[2])
                             inner_2nd = addDict("XCUIElementTypeButton","button",c_2nd[2][0],c_2nd[1])
-                        else: inner_2nd = addDict("XCUIElementTypeButton","img","",c_2nd[1])
+                        else: 
+                            inner_2nd = addDict("XCUIElementTypeButton","button","",c[1])
+                            inner_2nd.pop("_EA@text", None)
+                            inner_2nd["_TaaD::imageToBeClipped"] = True
                         
                         for i_3rd, c_3rd in enumerate(second):
                     
@@ -114,7 +113,10 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                                 if c[2][1]>=70: 
                                     print('text: ',c_3rd[2])
                                     inner_3rd= addDict("XCUIElementTypeButton","button",c_3rd[2][0],c_3rd[1])
-                                else: inner_3rd = addDict("XCUIElementTypeButton","img","",c_3rd[1])
+                                else: 
+                                    inner_3rd = addDict("XCUIElementTypeButton","button","",c[1])
+                                    inner_3rd.pop("_EA@text", None)
+                                    inner_3rd["_TaaD::imageToBeClipped"] = True
                                 
                                 for i_4th, c_4th in enumerate(second):
                                     
@@ -125,7 +127,10 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                                         if c[2][1]>=70: 
                                             print('text: ',c_4th[2])
                                             inner_4th = addDict("XCUIElementTypeButton","button",c_4th[2][0],c_4th[1])
-                                        else: inner_4th = addDict("XCUIElementTypeButton","img","",c_4th[1])
+                                        else: 
+                                            inner_4th = addDict("XCUIElementTypeButton","button","",c[1])
+                                            inner_4th.pop("_EA@text", None)
+                                            inner_4th["_TaaD::imageToBeClipped"] = True
                                         
                                         inner_3rd["child"].append(inner_4th)
                                         

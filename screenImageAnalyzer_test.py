@@ -143,7 +143,7 @@ class screenImageAnalyzer:
 
         height,width,_ = img.shape
         outerLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
-              "tag": "ol", "byVision": True, "x": 0, "y": 0, "width": width, "height": height, "child":[]}
+                    "tag": "ol", "_TaaD::byVision": True, "x": 0, "y": 0, "width": width, "height": height, "child":[]}
 
         secondLayerList = []
         copy = info.copy()
@@ -186,7 +186,7 @@ class screenImageAnalyzer:
 
             coordinate = [x_low, y_low, x_upp-x_low, y_upp-y_low]
             secondLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
-                            "tag": "div", "byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
+                        "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
             
 
             for c in second:
@@ -199,28 +199,40 @@ class screenImageAnalyzer:
                 if c[0][1][3]==-1 or (c[0][1][3] != d[0][0] for d in info):
                     if c[2][1]>=70: 
                         inner_1st = self.addDict("XCUIElementTypeButton","button",c[2][0],c[1])
-                    else: inner_1st = self.addDict("XCUIElementTypeButton","img","",c[1])
+                    else: 
+                        inner_1st = self.addDict("XCUIElementTypeButton","button","",c[1])
+                        inner_1st.pop("_EA@text", None)
+                        inner_1st["_TaaD::imageToBeClipped"] = True
                         
                     for i_2nd, c_2nd in enumerate(second):
                         
                         if c[0][0]==c_2nd[0][1][3]:
                             if c[2][1]>=70: 
                                 inner_2nd = self.addDict("XCUIElementTypeButton","button",c_2nd[2][0],c_2nd[1])
-                            else: inner_2nd = self.addDict("XCUIElementTypeButton","img","",c_2nd[1])
+                            else: 
+                                inner_2nd = self.addDict("XCUIElementTypeButton","button","",c_2nd[1])
+                                inner_2nd.pop("_EA@text", None)
+                                inner_2nd["_TaaD::imageToBeClipped"] = True
                             
                             for i_3rd, c_3rd in enumerate(second):
                         
                                 if c_2nd[0][0]==c_3rd[0][1][3]:
                                     if c[2][1]>=70: 
                                         inner_3rd= self.addDict("XCUIElementTypeButton","button",c_3rd[2][0],c_3rd[1])
-                                    else: inner_3rd = self.addDict("XCUIElementTypeButton","img","",c_3rd[1])
+                                    else: 
+                                        inner_3rd = self.addDict("XCUIElementTypeButton","button","",c_3rd[1])
+                                        inner_3rd.pop("_EA@text", None)
+                                        inner_3rd["_TaaD::imageToBeClipped"] = True
                                     
                                     for i_4th, c_4th in enumerate(second):
                                         
                                         if c_3rd[0][0]==c_4th[0][1][3]:
                                             if c[2][1]>=70: 
                                                 inner_4th = self.addDict("XCUIElementTypeButton","button",c_4th[2][0],c_4th[1])
-                                            else: inner_4th = self.addDict("XCUIElementTypeButton","img","",c_4th[1])
+                                            else: 
+                                                inner_4th = self.addDict("XCUIElementTypeButton","button","",c_4th[1])
+                                                inner_4th.pop("_EA@text", None)
+                                                inner_4th["_TaaD::imageToBeClipped"] = True
                                             
                                             inner_3rd["child"].append(inner_4th)
                                             
@@ -236,7 +248,7 @@ class screenImageAnalyzer:
     def addDict(self, elementType, tag, label, coordinate):
         x,y,w,h = coordinate
         a = {"_EA@isEnabled": True, "_EA@class": elementType, "_EA@isHidden": False, "_EA@isClickable": True, 
-            "tag": tag, "x": x, "y": y, "width": w, "height": h, "_EA@text": label, "child":[]}
+             "tag": tag, "op": "click", "_TaaD::byVision": True, "x": x, "y": y, "width": w, "height": h, "_EA@text": label, "child":[]}
         return a
 
     def combineContour(self, contourInfo_new, sizeOG):
@@ -251,23 +263,19 @@ class screenImageAnalyzer:
                 if hd<hc and wd<wc and xd>xc and xd+wd<xc+wc and yd>yc and yd+hd<yc+hc:
                     if wd+hd<=f*7 or (wd/hd>=3 and hd<=f*3) or (hd/wd>=3 and wd<=f*3):
                         contourInfo_new.remove(d)
-                        print('remove small', d)
                         #remove child that is too small and will be removed after combination
                     else: tag = 1
                 if tag ==1: break
                 #tag==1 means there is something contained in this contour
             if (wc>=width*0.8 or hc>=height*0.8) and tag==1:
                 contourInfo_new.remove(c)
-                print('remove', c)
             #filter out contour that is big and has child
         for c in contourInfo_new.copy():
             xc,yc,wc,hc = c[1]
             if (xc==0 or xc==width) and wc<=width*0.05:
                 contourInfo_new.remove(c)
-                print('remove edge', c)
             if (yc==0 or yc==height) and hc<=height*0.05:
                 contourInfo_new.remove(c)
-                print('remove edge', c)
             #filter out edge contour
 
         ##first combine in & out contours
