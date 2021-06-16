@@ -124,31 +124,31 @@ def combineContour(contourInfo_new, sizeOG):
 
             ##define constraints
             left =  (dtr_ctl<=f*4 or dbr_cbl<=f*4 or (x2 - (x1+w1))<=f*3.5 or x2<x1+w1) \
-                    and not(abs(h1/w1 - h2/w2)<=0.05 and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x2 - (x1+w1))>=f*0.5) \
+                    and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.7<=h1/h2<=1.4 and abs(w1-w2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x2 - (x1+w1))>=f*0.5) \
                     and (abs(h1-h2)<=f*20) and ((h1<f*25) or (h2<f*25)) \
-                    and (abs(mid_y1-mid_y2)<=f*5 or (dtr_ctl<=f and abs(mid_y1-mid_y2)<=f*10) or (dbr_cbl<=f and abs(mid_y1-mid_y2)<=f*10)) \
+                    and (abs(mid_y1-mid_y2)<=f*5 or (abs(y1-y2)<=f and abs(mid_y1-mid_y2)<=f*10) or (abs(y1+h1-(y2+h2))<=f and abs(mid_y1-mid_y2)<=f*10)) \
                     and not(h1>10*f and abs(h1-h2)<0.5*f)
 
             right = (ctr_dtl<=f*4 or cbr_dbl<=f*4 or (x1 - (x2+w2))<=f*3.5 or x1<x2+w2) \
-                    and not(abs(h1/w1 - h2/w2)<=0.05 and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x1 - (x2+w2))>=f*0.5) \
+                    and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.7<=h1/h2<=1.4 and abs(w1-w2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x1 - (x2+w2))>=f*0.5) \
                     and (abs(h1-h2)<=f*20) and ((h1<f*25) or (h2<f*25)) \
-                    and (abs(mid_y1-mid_y2)<=f*5 or (ctr_dtl<=f and abs(mid_y1-mid_y2)<=f*10) or (cbr_dbl<=f and abs(mid_y1-mid_y2)<=f*10)) \
+                    and (abs(mid_y1-mid_y2)<=f*5 or (abs(y1-y2)<=f and abs(mid_y1-mid_y2)<=f*10) or (abs(y1+h1-(y2+h2))<=f and abs(mid_y1-mid_y2)<=f*10)) \
                     and not(h1>10*f and abs(h1-h2)<0.5*f)
             
-            top  = (dbl_ctl<=f*3.5 or dbr_ctr<=f*3.5 or (w1<=w2 and (y2 - (y1+h1))<=f*3.1) or y2<y1+h1) \
-                    and not(abs(h1/w1 - h2/w2)<=0.05 and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y2 - (y1+h1))>=f*0.5 and h1>=f*3 and w1>=f*3) \
+            top  = (dbl_ctl<=f*3.5 or dbr_ctr<=f*3.5 or ((w1<=w2 or abs(mid_x1-mid_x2)<=f) and (y2 - (y1+h1))<=f*3) or y2<y1+h1) \
+                    and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.55<=w1/w2<=1.8 and abs(h1-h2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y2 - (y1+h1))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                     and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
-                    and (abs(mid_x1-mid_x2)<=f*5 or (dbl_ctl<=f and abs(mid_x1-mid_x2)<=f*10) or (dbr_ctr<=f and abs(mid_x1-mid_x2)<=f*10)) 
+                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
             
-            bottom = (cbl_dtl<=f*3.5 or cbr_dtr<=f*3.5 or (w2<=w1 and (y1 - (y2+h2))<=f*3.1) or y1<y2+h2) \
-                    and not(abs(h1/w1 - h2/w2)<=0.05 and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y1 - (y2+h2))>=f*0.5 and h1>=f*3 and w1>=f*3) \
+            bottom = (cbl_dtl<=f*3.5 or cbr_dtr<=f*3.5 or ((w2<=w1 or abs(mid_x1-mid_x2)<=f) and (y1 - (y2+h2))<=f*3) or y1<y2+h2) \
+                    and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.55<=w1/w2<=1.8 and abs(h1-h2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y1 - (y2+h2))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                     and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
-                    and (abs(mid_x1-mid_x2)<=f*5 or (cbl_dtl<=f and abs(mid_x1-mid_x2)<=f*10) or (cbr_dtr<=f and abs(mid_x1-mid_x2)<=f*10)) 
+                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
 
-            if c[0][0]==196:
+            if c[0][0]==35:
                 pass
-                print(i,c)
-                print(j,d)
+                # print(i,c)
+                # print(j,d)
                 
 
 

@@ -93,8 +93,10 @@ def allProcess(IMAGE_NUMBER, experiment):
         cv2.rectangle(clone2, (x, y), (x + w, y + h), (0, 255, 0), 2)
         cv2.putText(clone2, str(c[0][0]), (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-    if not(experiment): cv2.imwrite('result/better_'+IMAGE_NUMBER+'.png', clone2)
-
+    if not(experiment): 
+        cv2.imwrite('result/better_'+IMAGE_NUMBER+'.png', clone2)
+    else:
+        cv2.imwrite('experiment/better_'+IMAGE_NUMBER+'.png', clone2)
 
 
     NUM_THREADS = os.cpu_count()
