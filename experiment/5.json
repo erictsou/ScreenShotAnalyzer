@@ -1,8 +1,14 @@
 {
     "_EA@isEnabled": true,
-    "_EA@text": "YouTube",
-    "_EA@name": "YouTube",
-    "_EA@class": "XCUIElementTypeApplication",
+    "_EA@name": [
+        "id.app.view",
+        "YouTube"
+    ],
+    "_EA@class": [
+        "XCUIElementTypeOther",
+        "XCUIElementTypeWindow",
+        "XCUIElementTypeApplication"
+    ],
     "_EA@isHidden": false,
     "_EA@isClickable": false,
     "tag": "div",
@@ -10,27 +16,24 @@
     "y": 0,
     "width": 1125,
     "height": 2436,
+    "_EA@text": "YouTube",
     "_FM@topic": "search_page",
     "child": [
         {
             "_EA@isEnabled": true,
-            "_EA@name": "id.app.view",
-            "_EA@class": [
-                "XCUIElementTypeOther",
-                "XCUIElementTypeWindow"
-            ],
+            "_EA@text": "Top View",
+            "_EA@name": "Top View",
+            "_EA@class": "XCUIElementTypeOther",
             "_EA@isHidden": false,
             "_EA@isClickable": false,
             "tag": "div",
             "x": 0,
             "y": 0,
             "width": 1125,
-            "height": 2436,
+            "height": 2190,
             "child": [
                 {
                     "_EA@isEnabled": true,
-                    "_EA@text": "Top View",
-                    "_EA@name": "Top View",
                     "_EA@class": "XCUIElementTypeOther",
                     "_EA@isHidden": false,
                     "_EA@isClickable": false,
@@ -38,8 +41,34 @@
                     "x": 0,
                     "y": 0,
                     "width": 1125,
-                    "height": 2190,
+                    "height": 264,
                     "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeStaticText",
+                                "XCUIElementTypeButton",
+                                "XCUIElementTypeOther"
+                            ],
+                            "_EA@isHidden": true,
+                            "_EA@isClickable": false,
+                            "tag": [
+                                "div",
+                                "button"
+                            ],
+                            "_EA@type": [
+                                "text",
+                                "button"
+                            ],
+                            "x": 12,
+                            "y": 138,
+                            "width": 0,
+                            "height": 0,
+                            "_EA@text": "\u8fd4\u56de",
+                            "_EA@name": "id.ui.browse.back.button",
+                            "_NLP@topic": "search",
+                            "child": []
+                        },
                         {
                             "_EA@isEnabled": true,
                             "_EA@class": "XCUIElementTypeOther",
@@ -47,52 +76,141 @@
                             "_EA@isClickable": false,
                             "tag": "div",
                             "x": 0,
-                            "y": 0,
-                            "width": 1125,
-                            "height": 264,
+                            "y": 126,
+                            "width": 387,
+                            "height": 144,
+                            "_NLP@topic": "tab",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@name": "id.right_navigation_button.view",
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "set"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 585,
+                            "y": 138,
+                            "width": 516,
+                            "height": 120,
                             "child": [
                                 {
                                     "_EA@isEnabled": true,
-                                    "_EA@class": [
-                                        "XCUIElementTypeStaticText",
-                                        "XCUIElementTypeButton",
-                                        "XCUIElementTypeOther"
-                                    ],
+                                    "_EA@text": "3 \u901a\u77e5, 3 \u500b\u96b1\u85cf\u7684\u9805\u76ee",
+                                    "_EA@name": "\u901a\u77e5, 3 \u500b\u96b1\u85cf\u7684\u9805\u76ee",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 711,
+                                    "y": 132,
+                                    "width": 132,
+                                    "height": 132,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u60a8\u7684\u5e33\u6236",
+                                    "_EA@name": "account_panel_button",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 975,
+                                    "y": 132,
+                                    "width": 132,
+                                    "height": 132,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u6295\u653e",
+                                    "_EA@name": "id.mdx.playbackroute.button",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 579,
+                                    "y": 132,
+                                    "width": 132,
+                                    "height": 132,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u641c\u5c0b",
+                                    "_EA@name": "id.ui.navigation.search.button",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 843,
+                                    "y": 132,
+                                    "width": 132,
+                                    "height": 132,
+                                    "op": "click",
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeCollectionView",
+                        "XCUIElementTypeOther",
+                        "XCUIElementTypeScrollView"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": [
+                        "ul",
+                        "div"
+                    ],
+                    "_EA@isScrollable": true,
+                    "x": 0,
+                    "y": 264,
+                    "width": 1125,
+                    "height": 1926,
+                    "op": "swipe",
+                    "_EA@name": "id.ui.browse.tab.content",
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeCell",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 264,
+                            "width": 1125,
+                            "height": 144,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeImage",
                                     "_EA@isHidden": true,
                                     "_EA@isClickable": false,
-                                    "tag": [
-                                        "div",
-                                        "button"
-                                    ],
-                                    "_EA@type": [
-                                        "text",
-                                        "button"
-                                    ],
-                                    "x": 12,
-                                    "y": 138,
-                                    "width": 0,
-                                    "height": 0,
-                                    "_EA@text": "\u8fd4\u56de",
-                                    "_EA@name": "id.ui.browse.back.button",
-                                    "_NLP@topic": "language_change",
+                                    "tag": "XCUIElementTypeImage",
+                                    "x": -9,
+                                    "y": 255,
+                                    "width": 1143,
+                                    "height": 162,
                                     "child": []
                                 },
                                 {
                                     "_EA@isEnabled": true,
-                                    "_EA@class": "XCUIElementTypeOther",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": false,
-                                    "tag": "div",
-                                    "x": 0,
-                                    "y": 126,
-                                    "width": 387,
-                                    "height": 144,
-                                    "_NLP@topic": "language_change",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@name": "id.right_navigation_button.view",
                                     "_EA@class": [
                                         "XCUIElementTypeOther",
                                         "set"
@@ -100,71 +218,39 @@
                                     "_EA@isHidden": false,
                                     "_EA@isClickable": false,
                                     "tag": "div",
-                                    "x": 585,
-                                    "y": 138,
-                                    "width": 516,
-                                    "height": 120,
+                                    "x": 0,
+                                    "y": 264,
+                                    "width": 1125,
+                                    "height": 144,
                                     "child": [
                                         {
                                             "_EA@isEnabled": true,
-                                            "_EA@text": "3 \u901a\u77e5, 3 \u500b\u96b1\u85cf\u7684\u9805\u76ee",
-                                            "_EA@name": "\u901a\u77e5, 3 \u500b\u96b1\u85cf\u7684\u9805\u76ee",
+                                            "_EA@text": "Music app Music app",
+                                            "_EA@name": "id.ui.generic.button",
                                             "_EA@class": "XCUIElementTypeButton",
                                             "_EA@isHidden": false,
                                             "_EA@isClickable": true,
                                             "tag": "button",
                                             "_EA@type": "button",
-                                            "x": 711,
-                                            "y": 132,
-                                            "width": 132,
+                                            "x": 393,
+                                            "y": 270,
+                                            "width": 426,
                                             "height": 132,
                                             "op": "click",
                                             "child": []
                                         },
                                         {
                                             "_EA@isEnabled": true,
-                                            "_EA@text": "\u60a8\u7684\u5e33\u6236",
-                                            "_EA@name": "account_panel_button",
+                                            "_EA@text": "Originals Originals",
+                                            "_EA@name": "id.ui.generic.button",
                                             "_EA@class": "XCUIElementTypeButton",
                                             "_EA@isHidden": false,
                                             "_EA@isClickable": true,
                                             "tag": "button",
                                             "_EA@type": "button",
-                                            "x": 975,
-                                            "y": 132,
-                                            "width": 132,
-                                            "height": 132,
-                                            "op": "click",
-                                            "child": []
-                                        },
-                                        {
-                                            "_EA@isEnabled": true,
-                                            "_EA@text": "\u6295\u653e",
-                                            "_EA@name": "id.mdx.playbackroute.button",
-                                            "_EA@class": "XCUIElementTypeButton",
-                                            "_EA@isHidden": false,
-                                            "_EA@isClickable": true,
-                                            "tag": "button",
-                                            "_EA@type": "button",
-                                            "x": 579,
-                                            "y": 132,
-                                            "width": 132,
-                                            "height": 132,
-                                            "op": "click",
-                                            "child": []
-                                        },
-                                        {
-                                            "_EA@isEnabled": true,
-                                            "_EA@text": "\u641c\u5c0b",
-                                            "_EA@name": "id.ui.navigation.search.button",
-                                            "_EA@class": "XCUIElementTypeButton",
-                                            "_EA@isHidden": false,
-                                            "_EA@isClickable": true,
-                                            "tag": "button",
-                                            "_EA@type": "button",
-                                            "x": 843,
-                                            "y": 132,
-                                            "width": 132,
+                                            "x": 0,
+                                            "y": 270,
+                                            "width": 393,
                                             "height": 132,
                                             "op": "click",
                                             "child": []
@@ -176,323 +262,120 @@
                         {
                             "_EA@isEnabled": true,
                             "_EA@class": [
-                                "XCUIElementTypeCollectionView",
                                 "XCUIElementTypeOther",
-                                "XCUIElementTypeScrollView"
+                                "XCUIElementTypeCell"
                             ],
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": false,
-                            "tag": [
-                                "ul",
-                                "div"
-                            ],
-                            "_EA@isScrollable": true,
-                            "x": 0,
-                            "y": 264,
-                            "width": 1125,
-                            "height": 1926,
-                            "op": "swipe",
-                            "_EA@name": "id.ui.browse.tab.content",
-                            "child": [
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@class": "XCUIElementTypeCell",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": false,
-                                    "tag": "div",
-                                    "x": 0,
-                                    "y": 264,
-                                    "width": 1125,
-                                    "height": 144,
-                                    "child": [
-                                        {
-                                            "_EA@isEnabled": true,
-                                            "_EA@class": "XCUIElementTypeImage",
-                                            "_EA@isHidden": true,
-                                            "_EA@isClickable": false,
-                                            "tag": "XCUIElementTypeImage",
-                                            "x": -9,
-                                            "y": 255,
-                                            "width": 1143,
-                                            "height": 162,
-                                            "child": []
-                                        },
-                                        {
-                                            "_EA@isEnabled": true,
-                                            "_EA@class": [
-                                                "XCUIElementTypeOther",
-                                                "set"
-                                            ],
-                                            "_EA@isHidden": false,
-                                            "_EA@isClickable": false,
-                                            "tag": "div",
-                                            "x": 0,
-                                            "y": 264,
-                                            "width": 1125,
-                                            "height": 144,
-                                            "child": [
-                                                {
-                                                    "_EA@isEnabled": true,
-                                                    "_EA@text": "Music app Music app",
-                                                    "_EA@name": "id.ui.generic.button",
-                                                    "_EA@class": "XCUIElementTypeButton",
-                                                    "_EA@isHidden": false,
-                                                    "_EA@isClickable": true,
-                                                    "tag": "button",
-                                                    "_EA@type": "button",
-                                                    "x": 393,
-                                                    "y": 270,
-                                                    "width": 426,
-                                                    "height": 132,
-                                                    "op": "click",
-                                                    "child": []
-                                                },
-                                                {
-                                                    "_EA@isEnabled": true,
-                                                    "_EA@text": "Originals Originals",
-                                                    "_EA@name": "id.ui.generic.button",
-                                                    "_EA@class": "XCUIElementTypeButton",
-                                                    "_EA@isHidden": false,
-                                                    "_EA@isClickable": true,
-                                                    "tag": "button",
-                                                    "_EA@type": "button",
-                                                    "x": 0,
-                                                    "y": 270,
-                                                    "width": 393,
-                                                    "height": 132,
-                                                    "op": "click",
-                                                    "child": []
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@class": [
-                                        "XCUIElementTypeOther",
-                                        "XCUIElementTypeCell"
-                                    ],
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": [
-                                        "div",
-                                        "button"
-                                    ],
-                                    "x": 0,
-                                    "y": 408,
-                                    "width": 1125,
-                                    "height": 18,
-                                    "_EA@type": "button",
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "Blake Griffin holds PJ Tucker\u2019s arm then taunting him & KD not happy with Giannis \ud83d\udc40 - 47 \u79d2 - \u524d\u5f80\u983b\u9053 - MLG Highlights - \u89c0\u770b\u6b21\u6578\uff1a33\u842c\u6b21 - 6 \u5c0f\u6642\u524d - \u64ad\u653e\u5f71\u7247",
-                                    "_EA@name": "eml.vwc",
-                                    "_EA@class": [
-                                        "XCUIElementTypeButton",
-                                        "XCUIElementTypeOther",
-                                        "XCUIElementTypeCell"
-                                    ],
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": [
-                                        true,
-                                        false
-                                    ],
-                                    "tag": [
-                                        "button",
-                                        "div"
-                                    ],
-                                    "_EA@type": "button",
-                                    "x": 0,
-                                    "y": 426,
-                                    "width": 1125,
-                                    "height": 888,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u3010\u6d77\u8cca\u738b\u3011\u89e3\u958b\u60e1\u9b54\u679c\u5be6\u5bc4\u5bbf\u689d\u4ef6 | \u9ed1\u9b0d\u5b50\u596a\u8d70\u767d\u9b0d\u5b50\u80fd\u529b\u79d8\u5bc6!! - 5 \u5206\u9418 48 \u79d2 - \u524d\u5f80\u983b\u9053 - \u963f\u5f8cGAME - \u89c0\u770b\u6b21\u6578\uff1a5.1\u842c\u6b21 - 2 \u9031\u524d - \u64ad\u653e\u5f71\u7247",
-                                    "_EA@name": "eml.vwc",
-                                    "_EA@class": [
-                                        "XCUIElementTypeButton",
-                                        "XCUIElementTypeOther",
-                                        "XCUIElementTypeCell"
-                                    ],
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": [
-                                        true,
-                                        false
-                                    ],
-                                    "tag": [
-                                        "button",
-                                        "div"
-                                    ],
-                                    "_EA@type": "button",
-                                    "x": 0,
-                                    "y": 1314,
-                                    "width": 1125,
-                                    "height": 894,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u5782\u76f4\u6372\u8ef8, 3\u9801",
-                                    "_EA@name": "\u5782\u76f4\u6372\u8ef8, 3\u9801",
-                                    "_EA@class": "XCUIElementTypeOther",
-                                    "_EA@value": "0%",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": false,
-                                    "tag": "div",
-                                    "x": 1026,
-                                    "y": 264,
-                                    "width": 90,
-                                    "height": 1926,
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
-                                    "_EA@name": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
-                                    "_EA@class": "XCUIElementTypeOther",
-                                    "_EA@value": "0%",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": false,
-                                    "tag": "div",
-                                    "x": 0,
-                                    "y": 2091,
-                                    "width": 1125,
-                                    "height": 90,
-                                    "child": []
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": "XCUIElementTypeOther",
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": false,
-                    "tag": "div",
-                    "x": 0,
-                    "y": 2190,
-                    "width": 1125,
-                    "height": 246,
-                    "child": [
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
                             "_EA@isHidden": false,
                             "_EA@isClickable": true,
-                            "tag": "button",
-                            "_EA@type": "button",
+                            "tag": [
+                                "div",
+                                "button"
+                            ],
                             "x": 0,
-                            "y": 2190,
+                            "y": 408,
                             "width": 1125,
-                            "height": 3,
+                            "height": 18,
+                            "_EA@type": "button",
                             "op": "click",
                             "child": []
                         },
                         {
                             "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@text": "Terance Mann just ended Rudy Gobert\u2019s whole career & Ja Morant is jealous right now \ud83e\udd2d - 35 \u79d2 - \u524d\u5f80\u983b\u9053 - MLG Highlights - \u89c0\u770b\u6b21\u6578\uff1a1.6\u842c\u6b21 - 1 \u5c0f\u6642\u524d - \u64ad\u653e\u5f71\u7247",
+                            "_EA@name": "eml.vwc",
+                            "_EA@class": [
+                                "XCUIElementTypeButton",
+                                "XCUIElementTypeOther",
+                                "XCUIElementTypeCell"
+                            ],
                             "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
+                            "_EA@isClickable": [
+                                true,
+                                false
+                            ],
+                            "tag": [
+                                "button",
+                                "div"
+                            ],
                             "_EA@type": "button",
                             "x": 0,
-                            "y": 2193,
+                            "y": 426,
                             "width": 1125,
-                            "height": 243,
+                            "height": 888,
                             "op": "click",
-                            "child": [
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u9996\u9801",
-                                    "_EA@name": "id.ui.pivotbar.FEwhat_to_watch.button",
-                                    "_EA@class": "XCUIElementTypeButton",
-                                    "_EA@value": "1",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": "button",
-                                    "_EA@type": "button",
-                                    "x": 0,
-                                    "y": 2169,
-                                    "width": 225,
-                                    "height": 225,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u63a2\u7d22",
-                                    "_EA@name": "id.ui.pivotbar.FEexplore.button",
-                                    "_EA@class": "XCUIElementTypeButton",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": "button",
-                                    "_EA@type": "button",
-                                    "x": 225,
-                                    "y": 2169,
-                                    "width": 225,
-                                    "height": 225,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u5efa\u7acb",
-                                    "_EA@name": "id.ui.pivotbar.FEuploads.button",
-                                    "_EA@class": "XCUIElementTypeButton",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": "button",
-                                    "_EA@type": "button",
-                                    "x": 450,
-                                    "y": 2169,
-                                    "width": 225,
-                                    "height": 225,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u8a02\u95b1\u5167\u5bb9",
-                                    "_EA@name": "id.ui.pivotbar.FEsubscriptions.button",
-                                    "_EA@class": "XCUIElementTypeButton",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": "button",
-                                    "_EA@type": "button",
-                                    "x": 675,
-                                    "y": 2169,
-                                    "width": 225,
-                                    "height": 225,
-                                    "op": "click",
-                                    "child": []
-                                },
-                                {
-                                    "_EA@isEnabled": true,
-                                    "_EA@text": "\u5a92\u9ad4\u5eab",
-                                    "_EA@name": "id.ui.pivotbar.FElibrary.button",
-                                    "_EA@class": "XCUIElementTypeButton",
-                                    "_EA@isHidden": false,
-                                    "_EA@isClickable": true,
-                                    "tag": "button",
-                                    "_EA@type": "button",
-                                    "x": 900,
-                                    "y": 2169,
-                                    "width": 225,
-                                    "height": 225,
-                                    "op": "click",
-                                    "child": []
-                                }
-                            ]
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "XCUIElementTypeCell"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": [
+                                "div",
+                                "button"
+                            ],
+                            "x": 0,
+                            "y": 1314,
+                            "width": 1125,
+                            "height": 18,
+                            "_EA@type": "button",
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u7403\u7d66\u5f6d\u5c0a SPOOTD, 1 \u5c0f\u6642\u524d (\u5df2\u7de8\u8f2f), \u7576\u521d\u5927\u5bb6\u90fd\u8aaa\u9019\u7b46\u4ea4\u6613\uff0c\u8001\u9df9\u592a\u8667\u4e86 \u524d\u5e74\u53bb\u8001\u9df9\u4e3b\u5834\u770b\u7403\uff0c\u767c\u73fe\u8ddf\u5a92\u9ad4\u4e0a\u8aaa\u7684\u6839\u672c\u4e0d\u4e00\u6a23\uff0c\u4e3b\u5834\u7403\u8ff7\u7684\u6b61\u547c\u8072\u5c31\u77e5\u9053\uff0cTrae Young \u5df2\u7d93\u662f\u8001\u9df9\u7403\u8ff7\u7684\u6700\u611b\uff0c\u9019\u7b46\u4ea4\u6613\u73fe\u5728\u4f86\u770b\u5c0d\u5169\u968a\u90fd\u662f\u6700\u597d\u7684\u7d50\u679c\ud83d\udc4c\ud83c\udffb #\u5982\u679cLuka\u4e0d\u6703\u8f49\u968a\u7684\u8a71 #\u4f46\u9084\u662f\u6253\u4e0d\u8d0f\u7c43\u7db2, \u5716\u7247\u9644\u4ef6, 167 \u4eba\u559c\u6b61, 10 \u5247\u7559\u8a00",
+                            "_EA@name": "id.ui.backstage.post",
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "XCUIElementTypeCell"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": [
+                                "div",
+                                "button"
+                            ],
+                            "x": 0,
+                            "y": 1332,
+                            "width": 1125,
+                            "height": 1593,
+                            "_EA@type": "button",
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u5782\u76f4\u6372\u8ef8, 3\u9801",
+                            "_EA@name": "\u5782\u76f4\u6372\u8ef8, 3\u9801",
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@value": "0%",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 1026,
+                            "y": 264,
+                            "width": 90,
+                            "height": 1926,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                            "_EA@name": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@value": "0%",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 2091,
+                            "width": 1125,
+                            "height": 90,
+                            "child": []
                         }
                     ]
                 }
@@ -500,408 +383,121 @@
         },
         {
             "_EA@isEnabled": true,
-            "_EA@class": [
-                "XCUIElementTypeOther",
-                "XCUIElementTypeWindow"
-            ],
-            "_EA@isHidden": true,
+            "_EA@class": "XCUIElementTypeOther",
+            "_EA@isHidden": false,
             "_EA@isClickable": false,
-            "tag": [
-                "ol",
-                "div"
-            ],
+            "tag": "div",
             "x": 0,
-            "y": 0,
+            "y": 2190,
             "width": 1125,
-            "height": 2436,
-            "_NLP@topic": "language_change",
+            "height": 246,
             "child": [
                 {
                     "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeOther",
-                        "set"
-                    ],
+                    "_EA@class": "XCUIElementTypeButton",
                     "_EA@isHidden": false,
-                    "_EA@isClickable": false,
-                    "tag": "li",
-                    "x": 80,
-                    "y": 48,
-                    "width": 1006,
-                    "height": 42,
-                    "child": [
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 80,
-                            "y": 49,
-                            "width": 120,
-                            "height": 40,
-                            "_EA@text": "17:30",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 879,
-                            "y": 48,
-                            "width": 207,
-                            "height": 42,
-                            "_EA@text": "4G",
-                            "child": []
-                        }
-                    ]
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": "XCUIElementTypeOther",
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": false,
-                    "tag": "li",
-                    "x": 45,
-                    "y": 154,
-                    "width": 1035,
-                    "height": 83,
-                    "child": [
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 749,
-                            "y": 154,
-                            "width": 76,
-                            "height": 77,
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 1002,
-                            "y": 159,
-                            "width": 78,
-                            "height": 78,
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 45,
-                            "y": 164,
-                            "width": 295,
-                            "height": 68,
-                            "_EA@text": "> Premium",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 878,
-                            "y": 167,
-                            "width": 61,
-                            "height": 61,
-                            "_EA@text": "Q",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 611,
-                            "y": 170,
-                            "width": 68,
-                            "height": 56,
-                            "child": []
-                        }
-                    ]
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeOther",
-                        "set"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": false,
-                    "tag": "li",
-                    "x": 50,
-                    "y": 300,
-                    "width": 721,
-                    "height": 72,
-                    "child": [
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 50,
-                            "y": 311,
-                            "width": 295,
-                            "height": 55,
-                            "_EA@text": "Originals",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 441,
-                            "y": 300,
-                            "width": 330,
-                            "height": 72,
-                            "_EA@text": "\u00a9 Music app",
-                            "child": []
-                        }
-                    ]
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
-                    "op": "click",
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
                     "x": 0,
-                    "y": 422,
+                    "y": 2190,
                     "width": 1125,
-                    "height": 641,
+                    "height": 3,
+                    "op": "click",
                     "child": []
                 },
                 {
                     "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
+                    "_EA@class": "XCUIElementTypeButton",
                     "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
-                    "op": "click",
-                    "x": 640,
-                    "y": 1100,
-                    "width": 381,
-                    "height": 44,
-                    "_EA@text": "Tucker\u2019s arm then",
-                    "child": []
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
-                    "op": "click",
-                    "x": 176,
-                    "y": 1158,
-                    "width": 795,
-                    "height": 102,
-                    "_EA@text": "Highlights MLG \u5c0f\u6642\u524d",
-                    "child": []
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
-                    "op": "click",
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
                     "x": 0,
-                    "y": 1309,
+                    "y": 2193,
                     "width": 1125,
-                    "height": 643,
-                    "child": []
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
+                    "height": 243,
                     "op": "click",
-                    "x": 33,
-                    "y": 1979,
-                    "width": 951,
-                    "height": 116,
-                    "_EA@text": "A \u3010\u6d77\u8cca\u738b\u3011 \u89e3\u958b\u60e1\u9b54\u679c\u5be6\u5bc4\u5bbf\u689d\u4ef6",
-                    "child": []
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeButton",
-                        "XCUIElementTypeOther"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": [
-                        true,
-                        false
-                    ],
-                    "tag": [
-                        "button",
-                        "li"
-                    ],
-                    "op": "click",
-                    "x": 179,
-                    "y": 2110,
-                    "width": 683,
-                    "height": 44,
-                    "_EA@text": "1 \u842c\u6b21 2 \u9031\u524d",
-                    "child": []
-                },
-                {
-                    "_EA@isEnabled": true,
-                    "_EA@class": [
-                        "XCUIElementTypeOther",
-                        "set"
-                    ],
-                    "_EA@isHidden": false,
-                    "_EA@isClickable": false,
-                    "tag": "li",
-                    "x": 82,
-                    "y": 2205,
-                    "width": 973,
-                    "height": 113,
                     "child": [
                         {
                             "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 82,
-                            "y": 2215,
-                            "width": 59,
-                            "height": 103,
                             "_EA@text": "\u9996\u9801",
+                            "_EA@name": "id.ui.pivotbar.FEwhat_to_watch.button",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@value": "1",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 0,
+                            "y": 2169,
+                            "width": 225,
+                            "height": 225,
+                            "op": "click",
                             "child": []
                         },
                         {
                             "_EA@isEnabled": true,
-                            "_EA@class": "XCUIElementTypeButton",
-                            "_EA@isHidden": false,
-                            "_EA@isClickable": true,
-                            "tag": "button",
-                            "op": "click",
-                            "x": 303,
-                            "y": 2210,
-                            "width": 68,
-                            "height": 108,
                             "_EA@text": "\u63a2\u7d22",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
+                            "_EA@name": "id.ui.pivotbar.FEexplore.button",
                             "_EA@class": "XCUIElementTypeButton",
                             "_EA@isHidden": false,
                             "_EA@isClickable": true,
                             "tag": "button",
+                            "_EA@type": "button",
+                            "x": 225,
+                            "y": 2169,
+                            "width": 225,
+                            "height": 225,
                             "op": "click",
-                            "x": 510,
-                            "y": 2205,
-                            "width": 104,
-                            "height": 104,
-                            "_EA@text": "+",
                             "child": []
                         },
                         {
                             "_EA@isEnabled": true,
+                            "_EA@text": "\u5efa\u7acb",
+                            "_EA@name": "id.ui.pivotbar.FEuploads.button",
                             "_EA@class": "XCUIElementTypeButton",
                             "_EA@isHidden": false,
                             "_EA@isClickable": true,
                             "tag": "button",
+                            "_EA@type": "button",
+                            "x": 450,
+                            "y": 2169,
+                            "width": 225,
+                            "height": 225,
                             "op": "click",
-                            "x": 731,
-                            "y": 2212,
-                            "width": 112,
-                            "height": 106,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
                             "_EA@text": "\u8a02\u95b1\u5167\u5bb9",
-                            "child": []
-                        },
-                        {
-                            "_EA@isEnabled": true,
+                            "_EA@name": "id.ui.pivotbar.FEsubscriptions.button",
                             "_EA@class": "XCUIElementTypeButton",
                             "_EA@isHidden": false,
                             "_EA@isClickable": true,
                             "tag": "button",
+                            "_EA@type": "button",
+                            "x": 675,
+                            "y": 2169,
+                            "width": 225,
+                            "height": 225,
                             "op": "click",
-                            "x": 970,
-                            "y": 2213,
-                            "width": 85,
-                            "height": 104,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
                             "_EA@text": "\u5a92\u9ad4\u5eab",
+                            "_EA@name": "id.ui.pivotbar.FElibrary.button",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 900,
+                            "y": 2169,
+                            "width": 225,
+                            "height": 225,
+                            "op": "click",
                             "child": []
                         }
                     ]

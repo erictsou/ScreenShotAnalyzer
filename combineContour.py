@@ -12,9 +12,10 @@ def combineContour(contourInfo_new, sizeOG):
 
             if hd<hc and wd<wc and xd>xc and xd+wd<xc+wc and yd>yc and yd+hd<yc+hc:
                 if wd+hd<=f*7 or (wd/hd>=3 and hd<=f*3) or (hd/wd>=3 and wd<=f*3):
-                    contourInfo_new.remove(d)
-                    print('remove small', d)
-                    #remove child that is too small and will be removed after combination
+                    if d in contourInfo_new:
+                        contourInfo_new.remove(d)
+                        print('remove small', d)
+                        #remove child that is too small and will be removed after combination
                 else: tag = 1
             if tag ==1: break
             #tag==1 means there is something contained in this contour
