@@ -142,8 +142,12 @@ def allProcess(IMAGE_NUMBER, experiment):
     print('after combine1: ', len(contourInfo_new))
     contourInfo_new = combineContour(contourInfo_new, sizeOG)
     print('after combine2: ', len(contourInfo_new))
-    contourInfo_new = combineContour(contourInfo_new, sizeOG)
-    print('after combine3: ', len(contourInfo_new))
+
+    contourInfo_new = removeOverlap(contourInfo_new, sizeOG)
+    print('after remove overlap: ', len(contourInfo_new))
+    contourInfo_new = removeOverlap(contourInfo_new, sizeOG)
+    print('after remove overlap2: ', len(contourInfo_new))
+    
 
 
 

@@ -27,7 +27,7 @@ if platform.system() == 'Windows':
             = r'C:\Users\{}\AppData\Local\Tesseract-OCR\tesseract.exe'.format(os.getlogin())
     
     if pytesseract.pytesseract.tesseract_cmd == None: 
-        print ("Sorry that I could not find your tesseract.exe!")
+        print("Sorry that I could not find your tesseract.exe!")
         sys.exit(-1)
 
 class screenImageAnalyzer: 
@@ -74,7 +74,7 @@ class screenImageAnalyzer:
         else: 
             self.img = self.cv2Input[y:(y+height), x:(x+width)]
 
-        print ("********")
+        print("********")
 
         self.sizeOG = self.cv2Input.shape
         gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
@@ -123,6 +123,11 @@ class screenImageAnalyzer:
         contourInfo_new = self.combineContour(contourInfo_new, self.sizeOG)
         contourInfo_new = self.combineContour(contourInfo_new, self.sizeOG)
         print('number of contours after combination: ', len(contourInfo_new))
+        contourInfo_new = self.removeOverlap(contourInfo_new, self.sizeOG)
+        contourInfo_new = self.removeOverlap(contourInfo_new, self.sizeOG)
+        print('number of contours after removed overlapping: ', len(contourInfo_new))
+
+
         self.CVCanvas = self.img.copy()
         for i,c in enumerate(contourInfo_new):
             x,y,w,h = c[1]
@@ -131,8 +136,8 @@ class screenImageAnalyzer:
         self.conDict = self.generateJsonDict(self.img, contourInfo_new, self.sizeOG)
         print('Write to dict')
 
-        print ("The all vision Dict!")
-        print ("********")
+        print("The all vision Dict!")
+        print("********")
         
 
 
@@ -535,6 +540,191 @@ class screenImageAnalyzer:
             if w+h<=f*7 or (w/h>=3 and h<=f*3) or (h/w>=3 and w<=f*3):
                 contourInfo_new.remove(c)
             #filter out elements that too small
+
+        return contourInfo_new
+
+    def removeOverlap(self, contourInfo_new, sizeOG):
+        height, width, _ = sizeOG
+        f,l = (width*0.01,height*0.01) if width<height else (height*0.01,width*0.01)
+
+        ##first filter out contained contours
+        for i,c in enumerate(contourInfo_new):
+            for j,d in enumerate(contourInfo_new[i+1:].copy(),i+1):
+                #print(len(contourInfo_new[i+1:].copy()))
+                x1,y1,w1,h1 = d[1]
+                x2,y2,w2,h2 = c[1]
+                temp=[]
+                #print(i,j)
+                ##c contains d and vice versa
+                if h1<=h2 and w1<=w2 and x1>=x2 and x1+w1<=x2+w2+f and y1>=y2 and y1+h1<=y2+h2+f:
+                    temp.append(d[0])
+
+                    width = w2
+                    height = h2
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    
+                    
+                    temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    #temp[0][1][3]= -1
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
+                    #if d in contourInfo_new: contourInfo_new.remove(d)
+
+                elif h1>=h2 and w1>=w2 and x1<=x2 and x1+w1+f>=x2+w2 and y1<=y2 and y1+h1+f>=y2+h2:
+                    temp.append(d[0])
+
+                    width = w1
+                    height = h1
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    #temp[0][1][3]= -1
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
+                    #if c in contourInfo_new: contourInfo_new.remove(c)
+            
+        for i,c in enumerate(contourInfo_new):
+            for j,d in enumerate(contourInfo_new[i+1:].copy(),i+1):
+                #print(len(contourInfo_new[i+1:].copy()))
+                x1,y1,w1,h1 = d[1]
+                x2,y2,w2,h2 = c[1]
+                temp=[]
+                ##d is on left of c
+                if x1<x2 and x1+w1<x2+w2 and x2<x1+w1 \
+                and (y1<=y2<=y1+h1 or y1<=y2+h2<=y1+h1 or y1<=y2<=y1+h1 or (y2>=y1 and y2+h2<=y1+h1) or (y1>=y2 and y1+h1<=y2+h2)):
+                    #print("left")
+                    temp.append(d[0])
+
+                    if x1==x2:
+                        width = max(w1,w2)
+                    elif x1>x2 :
+                        width = x1+w1-x2
+                    else:
+                        width = x2+w2-x1
+
+                    if y1==y2:
+                        height = max(h1,h2)
+                    elif y1>y2 :
+                        height = max(y1+h1,y2+h2)-y2
+                    else:
+                        height = max(y1+h1,y2+h2)-y1
+
+
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([d[2][0]+' '+c[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    #左右關係的兩邊文字要相連
+                    #temp[0][1][3]= -1
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
+                    
+
+                ##d is on right of c  
+                elif x1>x2 and x1+w1>x2+w2 and x1<x2+w2 \
+                    and (y1<=y2<=y1+h1 or y1<=y2+h2<=y1+h1 or (y2>=y1 and y2+h2<=y1+h1) or (y1>=y2 and y1+h1<=y2+h2)):
+
+                    #print("right")
+                    temp.append(d[0])
+
+                    if x1==x2:
+                        width = max(w1,w2)
+                    elif x1>x2 :
+                        width = x1+w1-x2
+                    else:
+                        width = x2+w2-x1
+
+                    if y1==y2:
+                        height = max(h1,h2)
+                    elif y1>y2 :
+                        height = max(y1+h1,y2+h2)-y2
+                    else:
+                        height = max(y1+h1,y2+h2)-y1
+
+
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    #左右關係的兩邊文字要相連
+                    #temp[0][1][3]= -1
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
+
+                #d is on top of c
+                elif y1<y2 and y1+h1<y2+h2 and y2<y1+h1 \
+                    and (x1<=x2<=x1+w1 or x1<=x2+w2<=x1+w1 or (x1>=x2 and x1+w1<=x2+w2) or (x2>=x1 and x2+w2<=x1+w1)):
+                    #print("top")
+                    temp.append(d[0])
+                    
+
+                    if x1==x2:
+                        width = max(w1,w2)
+                    elif x1>x2:
+                        width = max(x1+w1,x2+w2)-x2
+                    else:
+                        width = max(x1+w1,x2+w2)-x1
+
+                    if y1==y2:
+                        height = max(h1,h2)
+                    elif y1>y2 :
+                        height = y1+h1-y2
+                    else:
+                        height = y2+h2-y1
+
+
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([d[2][0]+' '+c[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
+                        
+
+                #d is at the bottom of c
+                elif y1>y2 and y1+h1>y2+h2 and y1<y2+h2 \
+                    and (x1<=x2<=x1+w1 or x1<=x2+w2<=x1+w1 or (x1>=x2 and x1+w1<=x2+w2) or (x2>=x1 and x2+w2<=x1+w1)):
+                    #print("bottom")
+                    temp.append(d[0])
+
+                    if x1==x2:
+                        width = max(w1,w2)
+                    elif x1>x2:
+                        width = max(x1+w1,x2+w2)-x2
+                    else:
+                        width = max(x1+w1,x2+w2)-x1
+
+
+
+                    if y1==y2:
+                        height = max(h1,h2)
+                    elif y1>y2 :
+                        height = y1+h1-y2
+                    else:
+                        height = y2+h2-y1
+
+
+                    temp.append([min(x1,x2),min(y1,y2),width,height])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+
+                    if d in contourInfo_new: contourInfo_new.remove(d)
+                    contourInfo_new[i] = temp
+                    c = contourInfo_new[i]
 
         return contourInfo_new
     def addText(self, c, img_gray):

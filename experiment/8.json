@@ -1,0 +1,1276 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@text": "Uber Eats",
+    "_EA@name": "Uber Eats",
+    "_EA@class": "XCUIElementTypeApplication",
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_FM@topic": "register_page",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 132,
+                    "width": 1125,
+                    "height": 2031,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "set"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 132,
+                            "width": 1125,
+                            "height": 156,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u6392\u5e8f\u8207\u7be9\u9078\u9805\u76ee",
+                                    "_EA@name": "\u6392\u5e8f\u8207\u7be9\u9078\u9805\u76ee",
+                                    "_EA@class": [
+                                        "XCUIElementTypeButton",
+                                        "XCUIElementTypeOther"
+                                    ],
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": [
+                                        true,
+                                        false
+                                    ],
+                                    "tag": [
+                                        "button",
+                                        "div"
+                                    ],
+                                    "_EA@type": "button",
+                                    "x": 957,
+                                    "y": 138,
+                                    "width": 144,
+                                    "height": 144,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u73fe\u5728\u5916\u9001\u5230\u570b\u7acb\u81fa\u7063\u5927\u5b78\u8f9b\u4ea5\u9580\u5d17\u54e8",
+                                    "_EA@name": "\u73fe\u5728\u5916\u9001\u5230\u570b\u7acb\u81fa\u7063\u5927\u5b78\u8f9b\u4ea5\u9580\u5d17\u54e8",
+                                    "_EA@class": [
+                                        "XCUIElementTypeButton",
+                                        "XCUIElementTypeOther"
+                                    ],
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": [
+                                        true,
+                                        false
+                                    ],
+                                    "tag": [
+                                        "button",
+                                        "div"
+                                    ],
+                                    "_EA@type": "button",
+                                    "x": 156,
+                                    "y": 132,
+                                    "width": 813,
+                                    "height": 144,
+                                    "op": "click",
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 312,
+                            "width": 1125,
+                            "height": 1851,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@name": "store_front_collection_view",
+                                    "_EA@class": [
+                                        "XCUIElementTypeCollectionView",
+                                        "set"
+                                    ],
+                                    "_EA@isHidden": true,
+                                    "_EA@isClickable": false,
+                                    "tag": "ul",
+                                    "_EA@isScrollable": true,
+                                    "x": 0,
+                                    "y": 312,
+                                    "width": 1125,
+                                    "height": 1851,
+                                    "op": "swipe",
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u5782\u76f4\u6372\u8ef8, 1\u9801",
+                                            "_EA@name": "\u5782\u76f4\u6372\u8ef8, 1\u9801",
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@value": "0%",
+                                            "_EA@isHidden": true,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 1026,
+                                            "y": 312,
+                                            "width": 90,
+                                            "height": 1851,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                            "_EA@name": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@value": "0%",
+                                            "_EA@isHidden": true,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 2064,
+                                            "width": 1125,
+                                            "height": 90,
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": [
+                                        "XCUIElementTypeCollectionView",
+                                        "XCUIElementTypeOther"
+                                    ],
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": [
+                                        "ul",
+                                        "div"
+                                    ],
+                                    "_EA@isScrollable": true,
+                                    "x": 0,
+                                    "y": 312,
+                                    "width": 1125,
+                                    "height": 1851,
+                                    "op": "swipe",
+                                    "_EA@name": "EatsFeedLib.CoiFeedViewControllerAccessibilityIds.listView",
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeCollectionView",
+                                                "set",
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": [
+                                                "ul",
+                                                "div"
+                                            ],
+                                            "_EA@isScrollable": true,
+                                            "x": 0,
+                                            "y": 312,
+                                            "width": 1125,
+                                            "height": 288,
+                                            "op": "swipe",
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u512a\u60e0",
+                                                    "_EA@name": "\u512a\u60e0",
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeButton",
+                                                        "XCUIElementTypeOther",
+                                                        "XCUIElementTypeCell"
+                                                    ],
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": [
+                                                        true,
+                                                        false
+                                                    ],
+                                                    "tag": [
+                                                        "button",
+                                                        "div"
+                                                    ],
+                                                    "_EA@type": "button",
+                                                    "x": 24,
+                                                    "y": 336,
+                                                    "width": 240,
+                                                    "height": 228,
+                                                    "op": "click",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u734e\u52f5",
+                                                    "_EA@name": "\u734e\u52f5",
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeButton",
+                                                        "XCUIElementTypeOther",
+                                                        "XCUIElementTypeCell"
+                                                    ],
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": [
+                                                        true,
+                                                        false
+                                                    ],
+                                                    "tag": [
+                                                        "button",
+                                                        "div"
+                                                    ],
+                                                    "_EA@type": "button",
+                                                    "x": 1032,
+                                                    "y": 336,
+                                                    "width": 240,
+                                                    "height": 228,
+                                                    "op": "click",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u751f\u9bae\u96dc\u8ca8",
+                                                    "_EA@name": "\u751f\u9bae\u96dc\u8ca8",
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeButton",
+                                                        "XCUIElementTypeOther",
+                                                        "XCUIElementTypeCell"
+                                                    ],
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": [
+                                                        true,
+                                                        false
+                                                    ],
+                                                    "tag": [
+                                                        "button",
+                                                        "div"
+                                                    ],
+                                                    "_EA@type": "button",
+                                                    "x": 276,
+                                                    "y": 336,
+                                                    "width": 240,
+                                                    "height": 228,
+                                                    "op": "click",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u767e\u8ca8\u5546\u5834",
+                                                    "_EA@name": "\u767e\u8ca8\u5546\u5834",
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeButton",
+                                                        "XCUIElementTypeOther",
+                                                        "XCUIElementTypeCell"
+                                                    ],
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": [
+                                                        true,
+                                                        false
+                                                    ],
+                                                    "tag": [
+                                                        "button",
+                                                        "div"
+                                                    ],
+                                                    "_EA@type": "button",
+                                                    "x": 780,
+                                                    "y": 336,
+                                                    "width": 240,
+                                                    "height": 228,
+                                                    "op": "click",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u7f8e\u599d\u6bcd\u5b30",
+                                                    "_EA@name": "\u7f8e\u599d\u6bcd\u5b30",
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeButton",
+                                                        "XCUIElementTypeOther",
+                                                        "XCUIElementTypeCell"
+                                                    ],
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": [
+                                                        true,
+                                                        false
+                                                    ],
+                                                    "tag": [
+                                                        "button",
+                                                        "div"
+                                                    ],
+                                                    "_EA@type": "button",
+                                                    "x": 528,
+                                                    "y": 336,
+                                                    "width": 240,
+                                                    "height": 228,
+                                                    "op": "click",
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeOther",
+                                                "set",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 624,
+                                            "width": 1125,
+                                            "height": 693,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u8d0a\u52a9\u5ee3\u544a",
+                                                    "_EA@name": "\u8d0a\u52a9\u5ee3\u544a",
+                                                    "_EA@class": "XCUIElementTypeButton",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": true,
+                                                    "tag": "button",
+                                                    "_EA@type": "button",
+                                                    "x": 48,
+                                                    "y": 1212,
+                                                    "width": 168,
+                                                    "height": 51,
+                                                    "op": "click",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@text": "\u9903\u5320 \u901a\u5316\u5e97, \u8d0a\u52a9\u5ee3\u544a, 40TWD \u8cbb\u7528, 20\u201330 \u5206\u9418",
+                                                    "_EA@name": "regular_store_view",
+                                                    "_EA@class": "XCUIElementTypeButton",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": true,
+                                                    "tag": "button",
+                                                    "_EA@type": "button",
+                                                    "x": 48,
+                                                    "y": 672,
+                                                    "width": 1029,
+                                                    "height": 597,
+                                                    "op": "click",
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u7ad9\u98df\u53ef\u4ee5 \u516c\u9928\u5e97, 25TWD \u8cbb\u7528, 15\u201325 \u5206\u9418",
+                                            "_EA@name": "regular_store_view",
+                                            "_EA@class": [
+                                                "XCUIElementTypeButton",
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": [
+                                                true,
+                                                false
+                                            ],
+                                            "tag": [
+                                                "button",
+                                                "div"
+                                            ],
+                                            "_EA@type": "button",
+                                            "x": 48,
+                                            "y": 1365,
+                                            "width": 1029,
+                                            "height": 597,
+                                            "op": "click",
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 2034,
+                                            "width": 1125,
+                                            "height": 789,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 48,
+                                                    "y": 2082,
+                                                    "width": 1029,
+                                                    "height": 87,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u60a8\u7684\u6700\u611b\u5546\u5bb6",
+                                                            "_EA@name": "\u60a8\u7684\u6700\u611b\u5546\u5bb6",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@value": "\u60a8\u7684\u6700\u611b\u5546\u5bb6",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 48,
+                                                            "y": 2082,
+                                                            "width": 432,
+                                                            "height": 87,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeButton",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": true,
+                                                            "tag": "button",
+                                                            "_EA@type": "button",
+                                                            "x": 1041,
+                                                            "y": 2085,
+                                                            "width": 60,
+                                                            "height": 102,
+                                                            "op": "click",
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": [
+                                                        "XCUIElementTypeCollectionView",
+                                                        "set",
+                                                        "XCUIElementTypeOther"
+                                                    ],
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": [
+                                                        "ul",
+                                                        "div"
+                                                    ],
+                                                    "_EA@isScrollable": true,
+                                                    "x": 0,
+                                                    "y": 2217,
+                                                    "width": 1125,
+                                                    "height": 606,
+                                                    "op": "swipe",
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u4e16\u754c\u8c46\u6f3f\u5927\u738b \u7e3d\u5e97, \u5728 5 \u661f\u8a55\u5206\u4e2d\u7372\u5f97 4.7 \u9846\u661f\u7684\u9ad8\u4eba\u6c23\u9910\u5ef3 - \u6839\u64da 200 \u5247\u4ee5\u4e0a\u7684\u9867\u5ba2\u8a55\u8ad6\u3002, 60TWD \u8cbb\u7528, 25\u201335 \u5206\u9418",
+                                                            "_EA@name": "regular_store_view",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeButton",
+                                                                "XCUIElementTypeOther",
+                                                                "XCUIElementTypeCell"
+                                                            ],
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": [
+                                                                "button",
+                                                                "div"
+                                                            ],
+                                                            "_EA@type": "button",
+                                                            "x": 48,
+                                                            "y": 2217,
+                                                            "width": 933,
+                                                            "height": 558,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u5c0f\u65fa\u865f \u516c\u9928\u5e97, \u5728 5 \u661f\u8a55\u5206\u4e2d\u7372\u5f97 4.7 \u9846\u661f\u7684\u9ad8\u4eba\u6c23\u9910\u5ef3 - \u6839\u64da 200 \u5247\u4ee5\u4e0a\u7684\u9867\u5ba2\u8a55\u8ad6\u3002, 40TWD \u8cbb\u7528, 25\u201335 \u5206\u9418",
+                                                            "_EA@name": "regular_store_view",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeButton",
+                                                                "XCUIElementTypeOther",
+                                                                "XCUIElementTypeCell"
+                                                            ],
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": [
+                                                                "button",
+                                                                "div"
+                                                            ],
+                                                            "_EA@type": "button",
+                                                            "x": 1017,
+                                                            "y": 2217,
+                                                            "width": 933,
+                                                            "height": 558,
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u5782\u76f4\u6372\u8ef8, 55\u9801",
+                                            "_EA@name": "\u5782\u76f4\u6372\u8ef8, 55\u9801",
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@value": "0%",
+                                            "_EA@isHidden": true,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 1026,
+                                            "y": 312,
+                                            "width": 90,
+                                            "height": 1851,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                            "_EA@name": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@value": "0%",
+                                            "_EA@isHidden": true,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 2064,
+                                            "width": 1125,
+                                            "height": 90,
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeOther",
+                        "set"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 2163,
+                    "width": 1125,
+                    "height": 147,
+                    "_NLP@topic": "tab",
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 2163,
+                            "width": 1125,
+                            "height": 6,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": [
+                                true,
+                                false
+                            ],
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 117,
+                            "y": 2184,
+                            "width": 39,
+                            "height": 36,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": [
+                                true,
+                                false
+                            ],
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 342,
+                            "y": 2184,
+                            "width": 39,
+                            "height": 36,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": [
+                                true,
+                                false
+                            ],
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 567,
+                            "y": 2184,
+                            "width": 39,
+                            "height": 36,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": [
+                                true,
+                                false
+                            ],
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 792,
+                            "y": 2184,
+                            "width": 39,
+                            "height": 36,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": [
+                                true,
+                                false
+                            ],
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 1017,
+                            "y": 2184,
+                            "width": 39,
+                            "height": 36,
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u6a19\u7c64\u5217",
+                    "_EA@name": "\u6a19\u7c64\u5217",
+                    "_EA@class": [
+                        "XCUIElementTypeTabBar",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 2163,
+                    "width": 1125,
+                    "height": 147,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u9996\u9801",
+                            "_EA@name": "\u9996\u9801",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@value": "1",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 6,
+                            "y": 2166,
+                            "width": 213,
+                            "height": 144,
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u700f\u89bd",
+                            "_EA@name": "\u700f\u89bd",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 231,
+                            "y": 2166,
+                            "width": 213,
+                            "height": 144,
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u8a02\u55ae",
+                            "_EA@name": "\u8a02\u55ae",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 456,
+                            "y": 2166,
+                            "width": 213,
+                            "height": 144,
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u5e33\u6236",
+                            "_EA@name": "\u5e33\u6236",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 681,
+                            "y": 2166,
+                            "width": 213,
+                            "height": 144,
+                            "op": "click",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u53d6\u5f97\u901a\u884c\u8b49",
+                            "_EA@name": "\u53d6\u5f97\u901a\u884c\u8b49",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 906,
+                            "y": 2166,
+                            "width": 213,
+                            "height": 144,
+                            "op": "click",
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": [
+                "ol",
+                "div"
+            ],
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "_NLP@topic": "tab",
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 63,
+                    "y": 48,
+                    "width": 1023,
+                    "height": 42,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 1005,
+                            "y": 48,
+                            "width": 81,
+                            "height": 42,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 63,
+                            "y": 50,
+                            "width": 155,
+                            "height": 39,
+                            "_EA@text": "1 5:17",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 879,
+                            "y": 50,
+                            "width": 58,
+                            "height": 38,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 945,
+                            "y": 53,
+                            "width": 52,
+                            "height": 34,
+                            "_EA@text": "4G",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeOther",
+                        "set"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 299,
+                    "y": 151,
+                    "width": 763,
+                    "height": 105,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 299,
+                            "y": 151,
+                            "width": 577,
+                            "height": 105,
+                            "_EA@text": "\u73fe\u5728",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 456,
+                            "y": 151,
+                            "width": 113,
+                            "height": 46,
+                            "_EA@text": "\u5916\u9001",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 996,
+                            "y": 177,
+                            "width": 66,
+                            "height": 66,
+                            "_EA@text": "0\u4e00",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeOther",
+                        "set"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 92,
+                    "y": 350,
+                    "width": 882,
+                    "height": 211,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 92,
+                            "y": 354,
+                            "width": 105,
+                            "height": 207,
+                            "_EA@text": "\u512a\u60e0",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 322,
+                            "y": 356,
+                            "width": 147,
+                            "height": 205,
+                            "_EA@text": "\u751f\u4eba\u9bae\u96dc\u8ca8",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 574,
+                            "y": 353,
+                            "width": 147,
+                            "height": 207,
+                            "_EA@text": "\u7f8e\u599d\u6bcd\u5b30",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 826,
+                            "y": 350,
+                            "width": 148,
+                            "height": 210,
+                            "_EA@text": "\u767e\u8ca8\u5546\u5834",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 44,
+                    "y": 668,
+                    "width": 1037,
+                    "height": 455,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 44,
+                    "y": 1148,
+                    "width": 1027,
+                    "height": 115,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 1002,
+                            "y": 1148,
+                            "width": 69,
+                            "height": 72,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 47,
+                            "y": 1149,
+                            "width": 252,
+                            "height": 106,
+                            "_EA@text": "\u901a\u5316\u5e97",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 44,
+                            "y": 1214,
+                            "width": 197,
+                            "height": 49,
+                            "_EA@text": "\u8d0a\u52a9\u5ee3\u544a",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 305,
+                            "y": 1214,
+                            "width": 518,
+                            "height": 46,
+                            "_EA@text": "\u5206\u9418 20-30 \u8cbb\u7528",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 44,
+                    "y": 1361,
+                    "width": 1037,
+                    "height": 455,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 46,
+                    "y": 1841,
+                    "width": 1025,
+                    "height": 112,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 1002,
+                            "y": 1841,
+                            "width": 69,
+                            "height": 72,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 47,
+                            "y": 1842,
+                            "width": 348,
+                            "height": 51,
+                            "_EA@text": "\u4ee5 \u516c\u9928\u5e97",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 46,
+                            "y": 1907,
+                            "width": 555,
+                            "height": 46,
+                            "_EA@text": "\u5206\u9418 15-25 \u8cbb\u7528 25TWD",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 264,
+                    "y": 2089,
+                    "width": 143,
+                    "height": 74,
+                    "_EA@text": "\u611b",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeOther",
+                        "set"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 78,
+                    "y": 2187,
+                    "width": 1011,
+                    "height": 118,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 78,
+                            "y": 2187,
+                            "width": 67,
+                            "height": 118,
+                            "_EA@text": "\u9996\u9801",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 297,
+                            "y": 2198,
+                            "width": 79,
+                            "height": 107,
+                            "_EA@text": "\u700f\u89bd",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 529,
+                            "y": 2189,
+                            "width": 64,
+                            "height": 116,
+                            "_EA@text": "\u8a02\u55ae",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 747,
+                            "y": 2193,
+                            "width": 79,
+                            "height": 112,
+                            "_EA@text": "\u5e33\u6236",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 933,
+                            "y": 2200,
+                            "width": 156,
+                            "height": 105,
+                            "_EA@text": "\u53d6\u5f97\u901a\u884c\u8b49",
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
