@@ -1,0 +1,1092 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@class": [
+        "XCUIElementTypeOther",
+        "XCUIElementTypeWindow",
+        "XCUIElementTypeApplication"
+    ],
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_EA@text": "NBA",
+    "_EA@name": "NBA",
+    "_FM@topic": "wish_page",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": "XCUIElementTypeOther",
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@name": "\u4e3b\u5834",
+                    "_EA@class": "XCUIElementTypeNavigationBar",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 132,
+                    "width": 1125,
+                    "height": 132,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeImage",
+                            "_EA@isHidden": true,
+                            "_EA@isClickable": false,
+                            "tag": "XCUIElementTypeImage",
+                            "x": 486,
+                            "y": 132,
+                            "width": 153,
+                            "height": 132,
+                            "_NLP@topic": "search",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "header ic account 24x24",
+                            "_EA@name": "header ic account 24x24",
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "_EA@type": "button",
+                            "x": 975,
+                            "y": 147,
+                            "width": 102,
+                            "height": 102,
+                            "op": "click",
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeCollectionView",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": [
+                        "ul",
+                        "div"
+                    ],
+                    "_EA@isScrollable": true,
+                    "x": 0,
+                    "y": 264,
+                    "width": 1125,
+                    "height": 1923,
+                    "op": "swipe",
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeImage",
+                                "XCUIElementTypeOther"
+                            ],
+                            "_EA@isHidden": true,
+                            "_EA@isClickable": false,
+                            "tag": [
+                                "XCUIElementTypeImage",
+                                "div"
+                            ],
+                            "x": 0,
+                            "y": 102,
+                            "width": 1125,
+                            "height": 162,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "XCUIElementTypeCell"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 264,
+                            "width": 1125,
+                            "height": 1614,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 0,
+                                    "y": 264,
+                                    "width": 1125,
+                                    "height": 117,
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": "XCUIElementTypeImage",
+                                            "_EA@isHidden": true,
+                                            "_EA@isClickable": false,
+                                            "tag": "XCUIElementTypeImage",
+                                            "x": 0,
+                                            "y": 264,
+                                            "width": 1125,
+                                            "height": 117,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeStaticText",
+                                                "XCUIElementTypeButton"
+                                            ],
+                                            "_EA@isHidden": [
+                                                true,
+                                                false
+                                            ],
+                                            "_EA@isClickable": true,
+                                            "tag": [
+                                                "div",
+                                                "button"
+                                            ],
+                                            "_EA@type": [
+                                                "text",
+                                                "button"
+                                            ],
+                                            "x": 0,
+                                            "y": 264,
+                                            "width": 0,
+                                            "height": 0,
+                                            "op": "click",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeImage",
+                                    "_EA@isHidden": [
+                                        true,
+                                        false
+                                    ],
+                                    "_EA@isClickable": false,
+                                    "tag": "XCUIElementTypeImage",
+                                    "x": -3,
+                                    "y": 378,
+                                    "width": 1131,
+                                    "height": 849,
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": true,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 0,
+                                    "y": 378,
+                                    "width": 1125,
+                                    "height": 576,
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeImage",
+                                    "_EA@isHidden": true,
+                                    "_EA@isClickable": false,
+                                    "tag": "XCUIElementTypeImage",
+                                    "x": 483,
+                                    "y": 588,
+                                    "width": 159,
+                                    "height": 159,
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 0,
+                                    "y": 954,
+                                    "width": 1125,
+                                    "height": 924,
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeCollectionView",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "ul",
+                                    "_EA@isScrollable": true,
+                                    "x": 0,
+                                    "y": 1185,
+                                    "width": 1125,
+                                    "height": 693,
+                                    "op": "swipe",
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 99,
+                                            "y": 1191,
+                                            "width": 927,
+                                            "height": 603,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 99,
+                                                    "y": 1191,
+                                                    "width": 927,
+                                                    "height": 462,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 99,
+                                                            "y": 1191,
+                                                            "width": 465,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 327,
+                                                            "y": 1191,
+                                                            "width": 6,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 561,
+                                                            "y": 1191,
+                                                            "width": 465,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 789,
+                                                            "y": 1191,
+                                                            "width": 6,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeButton"
+                                                            ],
+                                                            "_EA@isHidden": [
+                                                                true,
+                                                                false
+                                                            ],
+                                                            "_EA@isClickable": true,
+                                                            "tag": [
+                                                                "div",
+                                                                "button"
+                                                            ],
+                                                            "_EA@type": [
+                                                                "text",
+                                                                "button"
+                                                            ],
+                                                            "x": 99,
+                                                            "y": 1251,
+                                                            "width": 3,
+                                                            "height": 3,
+                                                            "op": "click",
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 99,
+                                                            "y": 1251,
+                                                            "width": 927,
+                                                            "height": 402,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "Hawks topple top-seeded 76ers, advance to East finals",
+                                                            "_EA@name": "Hawks topple top-seeded 76ers, advance to East finals",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "Hawks topple top-seeded 76ers, advance to East finals",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 231,
+                                                            "y": 1239,
+                                                            "width": 663,
+                                                            "height": 105,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "Game 7: ATL \u52dd\u51fa\u7cfb\u5217\u8cfd 4-3",
+                                                            "_EA@name": "Game 7: ATL \u52dd\u51fa\u7cfb\u5217\u8cfd 4-3",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "Game 7: ATL \u52dd\u51fa\u7cfb\u5217\u8cfd 4-3",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 372,
+                                                            "y": 1377,
+                                                            "width": 381,
+                                                            "height": 36,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "XCUIElementTypeImage",
+                                                            "x": 177,
+                                                            "y": 1413,
+                                                            "width": 138,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "103",
+                                                            "_EA@name": "103",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "103",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 330,
+                                                            "y": 1413,
+                                                            "width": 141,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "96",
+                                                            "_EA@name": "96",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "96",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 651,
+                                                            "y": 1413,
+                                                            "width": 141,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "XCUIElementTypeImage",
+                                                            "x": 807,
+                                                            "y": 1413,
+                                                            "width": 138,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u7d42\u5834",
+                                                            "_EA@name": "\u7d42\u5834",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "\u7d42\u5834",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 99,
+                                                            "y": 1464,
+                                                            "width": 927,
+                                                            "height": 39,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "img",
+                                                            "x": 477,
+                                                            "y": 1470,
+                                                            "width": 15,
+                                                            "height": 27,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "5 Hawks",
+                                                            "_EA@name": "5 Hawks",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@value": "5 Hawks",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 183,
+                                                            "y": 1557,
+                                                            "width": 129,
+                                                            "height": 42,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "1 76ers",
+                                                            "_EA@name": "1 76ers",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@value": "1 76ers",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 819,
+                                                            "y": 1557,
+                                                            "width": 114,
+                                                            "height": 42,
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 99,
+                                                    "y": 1659,
+                                                    "width": 927,
+                                                    "height": 135,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 99,
+                                                            "y": 1656,
+                                                            "width": 927,
+                                                            "height": 6,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u89c0\u770b \u89c0\u770b",
+                                                            "_EA@name": "\u89c0\u770b",
+                                                            "_EA@class": "XCUIElementTypeButton",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": true,
+                                                            "tag": "button",
+                                                            "_EA@type": "button",
+                                                            "x": 99,
+                                                            "y": 1659,
+                                                            "width": 462,
+                                                            "height": 135,
+                                                            "op": "click",
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 561,
+                                                            "y": 1659,
+                                                            "width": 3,
+                                                            "height": 135,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u6280\u8853\u7d71\u8a08 \u6280\u8853\u7d71\u8a08",
+                                                            "_EA@name": "\u6280\u8853\u7d71\u8a08",
+                                                            "_EA@class": "XCUIElementTypeButton",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": true,
+                                                            "tag": "button",
+                                                            "_EA@type": "button",
+                                                            "x": 561,
+                                                            "y": 1659,
+                                                            "width": 465,
+                                                            "height": 135,
+                                                            "op": "click",
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": [
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeCell"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 1053,
+                                            "y": 1236,
+                                            "width": 924,
+                                            "height": 603,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 1053,
+                                                    "y": 1236,
+                                                    "width": 924,
+                                                    "height": 462,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1053,
+                                                            "y": 1236,
+                                                            "width": 462,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1281,
+                                                            "y": 1236,
+                                                            "width": 6,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1512,
+                                                            "y": 1236,
+                                                            "width": 465,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1743,
+                                                            "y": 1236,
+                                                            "width": 6,
+                                                            "height": 462,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeButton"
+                                                            ],
+                                                            "_EA@isHidden": [
+                                                                true,
+                                                                false
+                                                            ],
+                                                            "_EA@isClickable": true,
+                                                            "tag": [
+                                                                "div",
+                                                                "button"
+                                                            ],
+                                                            "_EA@type": [
+                                                                "text",
+                                                                "button"
+                                                            ],
+                                                            "x": 1053,
+                                                            "y": 1296,
+                                                            "width": 3,
+                                                            "height": 3,
+                                                            "op": "click",
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1053,
+                                                            "y": 1296,
+                                                            "width": 924,
+                                                            "height": 402,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "Booker dominates as Suns outlast Clippers in Game 1",
+                                                            "_EA@name": "Booker dominates as Suns outlast Clippers in Game 1",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "Booker dominates as Suns outlast Clippers in Game 1",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1182,
+                                                            "y": 1284,
+                                                            "width": 663,
+                                                            "height": 105,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "Game 1: PHX \u9818\u5148\u7cfb\u5217\u8cfd 1-0",
+                                                            "_EA@name": "Game 1: PHX \u9818\u5148\u7cfb\u5217\u8cfd 1-0",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "Game 1: PHX \u9818\u5148\u7cfb\u5217\u8cfd 1-0",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1320,
+                                                            "y": 1422,
+                                                            "width": 390,
+                                                            "height": 36,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "XCUIElementTypeImage",
+                                                            "x": 1131,
+                                                            "y": 1458,
+                                                            "width": 138,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "114",
+                                                            "_EA@name": "114",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "114",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1284,
+                                                            "y": 1458,
+                                                            "width": 141,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "120",
+                                                            "_EA@name": "120",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "120",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1605,
+                                                            "y": 1458,
+                                                            "width": 141,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "XCUIElementTypeImage",
+                                                            "x": 1761,
+                                                            "y": 1458,
+                                                            "width": 138,
+                                                            "height": 138,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u7d42\u5834",
+                                                            "_EA@name": "\u7d42\u5834",
+                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                            "_EA@value": "\u7d42\u5834",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1053,
+                                                            "y": 1509,
+                                                            "width": 924,
+                                                            "height": 39,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeImage",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "img",
+                                                            "x": 1584,
+                                                            "y": 1515,
+                                                            "width": 18,
+                                                            "height": 27,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "4 Clippers",
+                                                            "_EA@name": "4 Clippers",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@value": "4 Clippers",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1125,
+                                                            "y": 1602,
+                                                            "width": 150,
+                                                            "height": 42,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "2 Suns",
+                                                            "_EA@name": "2 Suns",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@value": "2 Suns",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "_EA@type": "text",
+                                                            "x": 1776,
+                                                            "y": 1602,
+                                                            "width": 105,
+                                                            "height": 42,
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 1053,
+                                                    "y": 1704,
+                                                    "width": 924,
+                                                    "height": 135,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1053,
+                                                            "y": 1701,
+                                                            "width": 924,
+                                                            "height": 6,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u89c0\u770b \u89c0\u770b",
+                                                            "_EA@name": "\u89c0\u770b",
+                                                            "_EA@class": "XCUIElementTypeButton",
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": true,
+                                                            "tag": "button",
+                                                            "_EA@type": "button",
+                                                            "x": 1053,
+                                                            "y": 1704,
+                                                            "width": 462,
+                                                            "height": 135,
+                                                            "op": "click",
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 1512,
+                                                            "y": 1704,
+                                                            "width": 6,
+                                                            "height": 135,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@text": "\u6280\u8853\u7d71\u8a08",
+                                                            "_EA@name": "\u6280\u8853\u7d71\u8a08",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeStaticText",
+                                                                "XCUIElementTypeButton"
+                                                            ],
+                                                            "_EA@value": "\u6280\u8853\u7d71\u8a08",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": [
+                                                                "div",
+                                                                "button"
+                                                            ],
+                                                            "_EA@type": [
+                                                                "text",
+                                                                "button"
+                                                            ],
+                                                            "x": 1665,
+                                                            "y": 1749,
+                                                            "width": 162,
+                                                            "height": 48,
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": [
+                                "XCUIElementTypeOther",
+                                "XCUIElementTypeCell"
+                            ],
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": [
+                                "div",
+                                "button"
+                            ],
+                            "x": 0,
+                            "y": 1908,
+                            "width": 1125,
+                            "height": 810,
+                            "_EA@type": "button",
+                            "op": "click",
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u7cbe\u9078\u6545\u4e8b",
+                                    "_EA@name": "\u7cbe\u9078\u6545\u4e8b",
+                                    "_EA@class": "XCUIElementTypeStaticText",
+                                    "_EA@value": "\u7cbe\u9078\u6545\u4e8b",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "_EA@type": "text",
+                                    "x": 30,
+                                    "y": 1938,
+                                    "width": 741,
+                                    "height": 60,
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeCollectionView",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "ul",
+                                    "_EA@isScrollable": true,
+                                    "x": 0,
+                                    "y": 2028,
+                                    "width": 1125,
+                                    "height": 660,
+                                    "op": "swipe",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeImage",
+                                    "_EA@isHidden": true,
+                                    "_EA@isClickable": false,
+                                    "tag": "XCUIElementTypeImage",
+                                    "x": 495,
+                                    "y": 2163,
+                                    "width": 135,
+                                    "height": 300,
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@text": "\u6a19\u7c64\u5217",
+            "_EA@name": "\u6a19\u7c64\u5217",
+            "_EA@class": "XCUIElementTypeTabBar",
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 2187,
+            "width": 1125,
+            "height": 249,
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u4e3b\u5834",
+                    "_EA@name": "\u4e3b\u5834",
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@value": "1",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
+                    "x": 6,
+                    "y": 2190,
+                    "width": 213,
+                    "height": 144,
+                    "op": "click",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u6bd4\u8cfd",
+                    "_EA@name": "\u6bd4\u8cfd",
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
+                    "x": 231,
+                    "y": 2190,
+                    "width": 213,
+                    "height": 144,
+                    "op": "click",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u6536\u770b",
+                    "_EA@name": "\u6536\u770b",
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
+                    "x": 456,
+                    "y": 2190,
+                    "width": 213,
+                    "height": 144,
+                    "op": "click",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u5b63\u5f8c\u8cfd",
+                    "_EA@name": "\u5b63\u5f8c\u8cfd",
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
+                    "x": 681,
+                    "y": 2190,
+                    "width": 213,
+                    "height": 144,
+                    "op": "click",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@text": "\u66f4\u591a",
+                    "_EA@name": "\u66f4\u591a",
+                    "_EA@class": "XCUIElementTypeButton",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": true,
+                    "tag": "button",
+                    "_EA@type": "button",
+                    "x": 906,
+                    "y": 2190,
+                    "width": 213,
+                    "height": 144,
+                    "op": "click",
+                    "child": []
+                }
+            ]
+        }
+    ]
+}

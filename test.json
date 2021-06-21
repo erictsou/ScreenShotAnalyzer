@@ -78,8 +78,8 @@
                     "y": 171,
                     "width": 84,
                     "height": 120,
-                    "_EA@text": "<",
-                    "child": []
+                    "child": [],
+                    "_TaaD::imageToBeClipped": true
                 },
                 {
                     "_EA@isEnabled": true,
@@ -122,8 +122,8 @@
                     "y": 366,
                     "width": 505,
                     "height": 505,
-                    "_EA@text": "2",
-                    "child": []
+                    "child": [],
+                    "_TaaD::imageToBeClipped": true
                 },
                 {
                     "_EA@isEnabled": true,
@@ -357,8 +357,8 @@
                     "y": 2073,
                     "width": 61,
                     "height": 65,
-                    "_EA@text": ">",
-                    "child": []
+                    "child": [],
+                    "_TaaD::imageToBeClipped": true
                 },
                 {
                     "_EA@isEnabled": true,

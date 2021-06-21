@@ -71,6 +71,11 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                     "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
         
 
+        sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
+            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+        alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        alpha = list(alpha_str)
+        ##remove abnormal symbol text
         for c in second:
             #同層下一個輪廓的序號、同層上一個輪廓的序號、子輪廓的序號、父輪廓的序號。
             #[[輪廓編號, 輪廓hier資訊],[輪廓座標],[輪廓文字,confidence]]
@@ -82,7 +87,11 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                 print(c[0][0],c[0][1],c[1])
                 temp.append(c[1])
                 cnt+=1
-                if c[2][1]>=70: 
+                if c[2][1]>=70 and \
+                    not(not(False in (s in sym for s in c[2][0])) \
+                    or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                    or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+
                     print('text: ',c[2])
                     inner_1st = addDict("XCUIElementTypeButton","button",c[2][0],c[1])
                 else: 
@@ -96,7 +105,11 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                         print(c_2nd[0][0],c_2nd[0][1],c_2nd[1],'2nd')
                         temp.append(c_2nd[1])
                         cnt+=1
-                        if c[2][1]>=70: 
+                        if c[2][1]>=70 and \
+                            not(not(False in (s in sym for s in c[2][0])) \
+                            or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                            or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+
                             print('text: ',c_2nd[2])
                             inner_2nd = addDict("XCUIElementTypeButton","button",c_2nd[2][0],c_2nd[1])
                         else: 
@@ -110,7 +123,11 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                                 print(c_3rd[0][0],c_3rd[0][1],c_3rd[1],'3rd')
                                 temp.append(c_3rd[1])
                                 cnt+=1
-                                if c[2][1]>=70: 
+                                if c[2][1]>=70 and \
+                                    not(not(False in (s in sym for s in c[2][0])) \
+                                    or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                                    or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+
                                     print('text: ',c_3rd[2])
                                     inner_3rd= addDict("XCUIElementTypeButton","button",c_3rd[2][0],c_3rd[1])
                                 else: 
@@ -124,7 +141,11 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                                         print(c_4th[0][0],c_4th[0][1],c_4th[1],'4th')
                                         temp.append(c_4th[1])
                                         cnt+=1
-                                        if c[2][1]>=70: 
+                                        if c[2][1]>=70 and \
+                                            not(not(False in (s in sym for s in c[2][0])) \
+                                            or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                                            or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+
                                             print('text: ',c_4th[2])
                                             inner_4th = addDict("XCUIElementTypeButton","button",c_4th[2][0],c_4th[1])
                                         else: 

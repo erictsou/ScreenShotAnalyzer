@@ -74,17 +74,17 @@ def removeImgNoise(contourInfo, img_gray):
     for c,e in zip(temp, pixelInfo):
         xc,yc,wc,hc = c[1]
         maxc, sizec = e
-        if (maxc/sizec<=0.43 and hc<=0.95*h and wc<=0.95*w) or maxc/sizec<=0.26:
+        if (maxc/sizec<=0.43 and hc<=0.95*h and wc<=0.95*w) or maxc/sizec<=0.34:
             for d, f in zip(temp, pixelInfo):
 
                 xd,yd,wd,hd = d[1]
                 maxd, sized = f
                 if hd<hc and wd<wc and xd>=xc and xd+wd<=xc+wc and yd>=yc and yd+hd<=yc+hc:
-                    if maxd/sized<=0.43 and wc-wd>=3*dist_factor and hc-hd>=3*dist_factor:
+                    if maxd/sized<=0.43 and wc-wd>=1.5*dist_factor and hc-hd>=1.5*dist_factor:
                         
                         if d in contourInfo: 
                             contourInfo.remove(d)
-                            #print('remove:',d,f)
+                            # print('remove:',d,f)
     # for c,e in zip(temp, pixelInfo):
     #     print(c,e)
                         

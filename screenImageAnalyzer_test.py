@@ -195,7 +195,10 @@ class screenImageAnalyzer:
             secondLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
                         "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
             
-
+            sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
+            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+            alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            alpha = list(alpha_str)
             for c in second:
                 #同層下一個輪廓的序號、同層上一個輪廓的序號、子輪廓的序號、父輪廓的序號。
                 #[[輪廓編號, 輪廓hier資訊],[輪廓座標],[輪廓文字,confidence]]
@@ -204,7 +207,10 @@ class screenImageAnalyzer:
                 #如果ocr confidence >= 80就加入xml dict?
                 
                 if c[0][1][3]==-1 or (c[0][1][3] != d[0][0] for d in info):
-                    if c[2][1]>=70: 
+                    if c[2][1]>=70 and \
+                        not(not(False in (s in sym for s in c[2][0])) \
+                        or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                        or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]): 
                         inner_1st = self.addDict("XCUIElementTypeButton","button",c[2][0],c[1])
                     else: 
                         inner_1st = self.addDict("XCUIElementTypeButton","button","",c[1])
@@ -214,7 +220,10 @@ class screenImageAnalyzer:
                     for i_2nd, c_2nd in enumerate(second):
                         
                         if c[0][0]==c_2nd[0][1][3]:
-                            if c[2][1]>=70: 
+                            if c[2][1]>=70 and \
+                                not(not(False in (s in sym for s in c[2][0])) \
+                                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
                                 inner_2nd = self.addDict("XCUIElementTypeButton","button",c_2nd[2][0],c_2nd[1])
                             else: 
                                 inner_2nd = self.addDict("XCUIElementTypeButton","button","",c_2nd[1])
@@ -224,7 +233,10 @@ class screenImageAnalyzer:
                             for i_3rd, c_3rd in enumerate(second):
                         
                                 if c_2nd[0][0]==c_3rd[0][1][3]:
-                                    if c[2][1]>=70: 
+                                    if c[2][1]>=70 and \
+                                        not(not(False in (s in sym for s in c[2][0])) \
+                                        or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                                        or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
                                         inner_3rd= self.addDict("XCUIElementTypeButton","button",c_3rd[2][0],c_3rd[1])
                                     else: 
                                         inner_3rd = self.addDict("XCUIElementTypeButton","button","",c_3rd[1])
@@ -234,7 +246,10 @@ class screenImageAnalyzer:
                                     for i_4th, c_4th in enumerate(second):
                                         
                                         if c_3rd[0][0]==c_4th[0][1][3]:
-                                            if c[2][1]>=70: 
+                                            if c[2][1]>=70 and \
+                                                not(not(False in (s in sym for s in c[2][0])) \
+                                                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                                                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]): 
                                                 inner_4th = self.addDict("XCUIElementTypeButton","button",c_4th[2][0],c_4th[1])
                                             else: 
                                                 inner_4th = self.addDict("XCUIElementTypeButton","button","",c_4th[1])
@@ -374,24 +389,28 @@ class screenImageAnalyzer:
 
                 ##define constraints
                 left =  (dtr_ctl<=f*4 or dbr_cbl<=f*4 or (x2 - (x1+w1))<=f*3.5 or x2<x1+w1) \
-                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.7<=h1/h2<=1.4 and abs(w1-w2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x2 - (x1+w1))>=f*0.5) \
-                        and (abs(h1-h2)<=f*20) and ((h1<f*25) or (h2<f*25)) \
-                        and (abs(mid_y1-mid_y2)<=f*5 or (abs(y1-y2)<=f and abs(mid_y1-mid_y2)<=f*10) or (abs(y1+h1-(y2+h2))<=f and abs(mid_y1-mid_y2)<=f*10)) \
-                        and not(h1>10*f and abs(h1-h2)<0.5*f)
+                    and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=h1/h2<=1.4 and 0<=w1-w2<=f) or (1<=h2/h1<=1.4 and 0<=w2-w1<=f)) \
+                            and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x2 - (x1+w1))>=f*0.5) \
+                    and (abs(h1-h2)<=f*20) and ((h1<f*25) or (h2<f*25)) \
+                    and (abs(mid_y1-mid_y2)<=f*5 or (abs(y1-y2)<=f and abs(mid_y1-mid_y2)<=f*10) or (abs(y1+h1-(y2+h2))<=f and abs(mid_y1-mid_y2)<=f*10)) \
+                    and not(h1>10*f and abs(h1-h2)<0.5*f)
 
                 right = (ctr_dtl<=f*4 or cbr_dbl<=f*4 or (x1 - (x2+w2))<=f*3.5 or x1<x2+w2) \
-                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.7<=h1/h2<=1.4 and abs(w1-w2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x1 - (x2+w2))>=f*0.5) \
+                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=h1/h2<=1.4 and 0<=w1-w2<=f) or (1<=h2/h1<=1.4 and 0<=w2-w1<=f)) \
+                                and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (x1 - (x2+w2))>=f*0.5) \
                         and (abs(h1-h2)<=f*20) and ((h1<f*25) or (h2<f*25)) \
                         and (abs(mid_y1-mid_y2)<=f*5 or (abs(y1-y2)<=f and abs(mid_y1-mid_y2)<=f*10) or (abs(y1+h1-(y2+h2))<=f and abs(mid_y1-mid_y2)<=f*10)) \
                         and not(h1>10*f and abs(h1-h2)<0.5*f)
                 
                 top  = (dbl_ctl<=f*3.5 or dbr_ctr<=f*3.5 or ((w1<=w2 or abs(mid_x1-mid_x2)<=f) and (y2 - (y1+h1))<=f*3) or y2<y1+h1) \
-                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.55<=w1/w2<=1.8 and abs(h1-h2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y2 - (y1+h1))>=f*0.5 and h1>=f*3 and w1>=f*3) \
+                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=w1/w2<=1.8 and 0<=h1-h2<=f) or (1<=w2/w1<=1.8 and 0<=h2-h1<=f)) \
+                                and abs(h1+w1-(h2+w2))<=6*f and (h1/w1<=3 and w1/h1<=3) and (y2 - (y1+h1))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                         and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
                         and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
                 
                 bottom = (cbl_dtl<=f*3.5 or cbr_dtr<=f*3.5 or ((w2<=w1 or abs(mid_x1-mid_x2)<=f) and (y1 - (y2+h2))<=f*3) or y1<y2+h2) \
-                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (0.55<=w1/w2<=1.8 and abs(h1-h2)<=f)) and abs(h1+w1-(h2+w2))<=6.5*f and (h1/w1<=3 and w1/h1<=3) and (y1 - (y2+h2))>=f*0.5 and h1>=f*3 and w1>=f*3) \
+                        and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=w1/w2<=1.8 and 0<=h1-h2<=f) or (1<=w2/w1<=1.8 and 0<=h2-h1<=f)) \
+                                and abs(h1+w1-(h2+w2))<=6*f and (h1/w1<=3 and w1/h1<=3) and (y1 - (y2+h2))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                         and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
                         and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
 
@@ -934,7 +953,7 @@ class screenImageAnalyzer:
         
         for c in contourInfo.copy():
             x,y,w,h = c[1]
-            if (w/h<=0.1 and h<=height/2) or w/h<=0.05 or (h/w<=0.1 and w<=width/2) or h/w<=0.05:
+            if (w/h<=0.15 and h<=height/4) or w/h<=0.05 or (h/w<=0.15 and w<=width/4) or h/w<=0.05:
                 contourInfo.remove(c)
 
                 #去掉直長條或橫長條
@@ -955,13 +974,13 @@ class screenImageAnalyzer:
         for c,e in zip(temp, pixelInfo):
             xc,yc,wc,hc = c[1]
             maxc, sizec = e
-            if (maxc/sizec<=0.43 and hc<=0.95*h and wc<=0.95*w) or maxc/sizec<=0.24:
+            if (maxc/sizec<=0.43 and hc<=0.95*h and wc<=0.95*w) or maxc/sizec<=0.34:
                 for d, f in zip(temp, pixelInfo):
 
                     xd,yd,wd,hd = d[1]
                     maxd, sized = f
                     if hd<hc and wd<wc and xd>=xc and xd+wd<=xc+wc and yd>=yc and yd+hd<=yc+hc:
-                        if maxd/sized<=0.43 and wc-wd>=3*dist_factor and hc-hd>=3*dist_factor:
+                        if maxd/sized<=0.43 and wc-wd>=1.5*dist_factor and hc-hd>=1.5*dist_factor:
                             if d in contourInfo: contourInfo.remove(d)
         print('number of contours after filted out img noises:', len(contourInfo))
         return contourInfo
