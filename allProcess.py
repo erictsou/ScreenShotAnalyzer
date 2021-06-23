@@ -129,7 +129,8 @@ def allProcess(IMAGE_NUMBER, experiment):
         api.End()
         
         
-
+    contourInfo = removeSymbols(contourInfo)
+    print('remove symbols')
 
 
     sizeOG = img.shape

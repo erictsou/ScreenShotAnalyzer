@@ -1,0 +1,1022 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@name": [
+        "spotify-main-window",
+        "Spotify"
+    ],
+    "_EA@class": [
+        "XCUIElementTypeWindow",
+        "XCUIElementTypeApplication"
+    ],
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_EA@text": "Spotify",
+    "_FM@topic": "main_page",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@name": [
+                "App-Main-Content-View",
+                "messageBarController container"
+            ],
+            "_EA@class": "XCUIElementTypeOther",
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 0,
+                    "width": 1125,
+                    "height": 2436,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 0,
+                            "width": 1125,
+                            "height": 2436,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 0,
+                                    "y": 0,
+                                    "width": 1125,
+                                    "height": 2187,
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@name": "SPTHomeView",
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 0,
+                                            "width": 1125,
+                                            "height": 2187,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "width": 1125,
+                                                    "height": 132,
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "width": 1125,
+                                                    "height": 744,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 1125,
+                                                            "height": 744,
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeOther",
+                                                                "set"
+                                                            ],
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 1125,
+                                                            "height": 744,
+                                                            "child": [
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@name": "fade-overlay",
+                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                    "_EA@isHidden": true,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "width": 1125,
+                                                                    "height": 744,
+                                                                    "child": []
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@name": "gradient-overlay",
+                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                    "_EA@isHidden": true,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "width": 1125,
+                                                                    "height": 744,
+                                                                    "child": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "width": 1125,
+                                                    "height": 2187,
+                                                    "child": [
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@name": "collectionView",
+                                                            "_EA@class": [
+                                                                "XCUIElementTypeCollectionView",
+                                                                "XCUIElementTypeOther"
+                                                            ],
+                                                            "_EA@isHidden": false,
+                                                            "_EA@isClickable": false,
+                                                            "tag": [
+                                                                "ul",
+                                                                "div"
+                                                            ],
+                                                            "_EA@isScrollable": true,
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 1125,
+                                                            "height": 2187,
+                                                            "op": "swipe",
+                                                            "child": [
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@name": [
+                                                                        "topBar",
+                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V-header-\u665a\u5b89"
+                                                                    ],
+                                                                    "_EA@class": [
+                                                                        "XCUIElementTypeOther",
+                                                                        "XCUIElementTypeCell"
+                                                                    ],
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 0,
+                                                                    "y": 228,
+                                                                    "width": 1125,
+                                                                    "height": 102,
+                                                                    "child": [
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@text": "\u665a\u5b89",
+                                                                            "_EA@name": "\u665a\u5b89",
+                                                                            "_EA@class": "XCUIElementTypeStaticText",
+                                                                            "_EA@value": "\u665a\u5b89",
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": false,
+                                                                            "tag": "div",
+                                                                            "_EA@type": "text",
+                                                                            "x": 48,
+                                                                            "y": 228,
+                                                                            "width": 144,
+                                                                            "height": 102,
+                                                                            "child": []
+                                                                        },
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@name": "top-bar-button-stack",
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeOther",
+                                                                                "set"
+                                                                            ],
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": false,
+                                                                            "tag": "div",
+                                                                            "x": 843,
+                                                                            "y": 213,
+                                                                            "width": 264,
+                                                                            "height": 132,
+                                                                            "child": [
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "\u8046\u807d\u8a18\u9304",
+                                                                                    "_EA@name": "listeninghistory-barbuttonitem",
+                                                                                    "_EA@class": "XCUIElementTypeButton",
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": true,
+                                                                                    "tag": "button",
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 843,
+                                                                                    "y": 213,
+                                                                                    "width": 132,
+                                                                                    "height": 132,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "\u8a2d\u5b9a",
+                                                                                    "_EA@name": "settings-barbuttonitem",
+                                                                                    "_EA@class": "XCUIElementTypeButton",
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": true,
+                                                                                    "tag": "button",
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 975,
+                                                                                    "y": 213,
+                                                                                    "width": 132,
+                                                                                    "height": 132,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@name": "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V",
+                                                                    "_EA@class": [
+                                                                        "XCUIElementTypeOther",
+                                                                        "XCUIElementTypeCell"
+                                                                    ],
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 0,
+                                                                    "y": 378,
+                                                                    "width": 1125,
+                                                                    "height": 552,
+                                                                    "child": [
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeOther",
+                                                                                "set"
+                                                                            ],
+                                                                            "_EA@isHidden": true,
+                                                                            "_EA@isClickable": false,
+                                                                            "tag": "div",
+                                                                            "x": 0,
+                                                                            "y": 378,
+                                                                            "width": 1125,
+                                                                            "height": 552,
+                                                                            "child": [
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@name": "fade-overlay",
+                                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                                    "_EA@isHidden": true,
+                                                                                    "_EA@isClickable": false,
+                                                                                    "tag": "div",
+                                                                                    "x": 0,
+                                                                                    "y": 378,
+                                                                                    "width": 1125,
+                                                                                    "height": 552,
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@name": "gradient-overlay",
+                                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                                    "_EA@isHidden": true,
+                                                                                    "_EA@isClickable": false,
+                                                                                    "tag": "div",
+                                                                                    "x": 0,
+                                                                                    "y": 378,
+                                                                                    "width": 1125,
+                                                                                    "height": 552,
+                                                                                    "child": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeCollectionView",
+                                                                                "set"
+                                                                            ],
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": false,
+                                                                            "tag": "ul",
+                                                                            "_EA@isScrollable": true,
+                                                                            "x": 0,
+                                                                            "y": 378,
+                                                                            "width": 1125,
+                                                                            "height": 552,
+                                                                            "op": "swipe",
+                                                                            "child": [
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "JoJo's Bizarre Playlist: Battle References DAGA KOTOWARU",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V_card5"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 48,
+                                                                                    "y": 378,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "Jubilee Japanese Breakfast",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V_card0"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 573,
+                                                                                    "y": 762,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "LIAM GALLAGHER: COMPLETE PLAYLIST Facebook | Twitter | Instagram",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:sectioxn:0JQ5DAnM3wGh0gz1MXnu7V_card3"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 48,
+                                                                                    "y": 570,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "Release Radar \u7b2c\u4e00\u6642\u9593\u6536\u807d\u95dc\u6ce8\u85dd\u4eba\u7684\u6240\u6709\u6700\u65b0\u97f3\u6a02\uff0c\u4ee5\u53ca\u70ba\u4f60\u7cbe\u5fc3\u6311\u9078\u7684\u65b0\u55ae\u66f2\u3002\u6bcf\u9031\u4e94\u66f4\u65b0\u3002",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V_card2"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 573,
+                                                                                    "y": 570,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "\u843d\u65e5\u98db\u8eca",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V_card1"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 48,
+                                                                                    "y": 762,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                },
+                                                                                {
+                                                                                    "_EA@isEnabled": true,
+                                                                                    "_EA@text": "\u96c6\u9ad4\u5236\u8e81 \u8377\u723e\u8499\u5c11\u5e74",
+                                                                                    "_EA@name": [
+                                                                                        "home:shortcutsCard",
+                                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu7V_card4"
+                                                                                    ],
+                                                                                    "_EA@class": [
+                                                                                        "XCUIElementTypeButton",
+                                                                                        "XCUIElementTypeOther",
+                                                                                        "XCUIElementTypeCell"
+                                                                                    ],
+                                                                                    "_EA@isHidden": false,
+                                                                                    "_EA@isClickable": [
+                                                                                        true,
+                                                                                        false
+                                                                                    ],
+                                                                                    "tag": [
+                                                                                        "button",
+                                                                                        "div"
+                                                                                    ],
+                                                                                    "_EA@type": "button",
+                                                                                    "x": 573,
+                                                                                    "y": 378,
+                                                                                    "width": 504,
+                                                                                    "height": 168,
+                                                                                    "op": "click",
+                                                                                    "child": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@text": "\u300c\u60c5\u6b4c\u738b\u5b50\u300d\u5468\u8208\u54f2 \u751f\u65e5\u5feb\u6a02\uff01",
+                                                                    "_EA@name": [
+                                                                        "\u300c\u60c5\u6b4c\u738b\u5b50\u300d\u5468\u8208\u54f2 \u751f\u65e5\u5feb\u6a02\uff01",
+                                                                        "hubs-spotify:section:0JQ5DApMPy0jM78k6Ozvy1_row0"
+                                                                    ],
+                                                                    "_EA@class": [
+                                                                        "XCUIElementTypeButton",
+                                                                        "XCUIElementTypeOther",
+                                                                        "XCUIElementTypeCell"
+                                                                    ],
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": [
+                                                                        true,
+                                                                        false
+                                                                    ],
+                                                                    "tag": [
+                                                                        "button",
+                                                                        "div"
+                                                                    ],
+                                                                    "_EA@type": "button",
+                                                                    "x": 48,
+                                                                    "y": 1026,
+                                                                    "width": 1029,
+                                                                    "height": 489,
+                                                                    "op": "click",
+                                                                    "child": []
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@text": "\u4f60\u53ef\u80fd\u6703\u559c\u6b61\u7684\u7bc0\u76ee",
+                                                                    "_EA@name": [
+                                                                        "\u4f60\u53ef\u80fd\u6703\u559c\u6b61\u7684\u7bc0\u76ee",
+                                                                        "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu3P-header"
+                                                                    ],
+                                                                    "_EA@class": [
+                                                                        "XCUIElementTypeOther",
+                                                                        "XCUIElementTypeCell"
+                                                                    ],
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": true,
+                                                                    "tag": [
+                                                                        "div",
+                                                                        "button"
+                                                                    ],
+                                                                    "x": 48,
+                                                                    "y": 1611,
+                                                                    "width": 1029,
+                                                                    "height": 102,
+                                                                    "_EA@type": "button",
+                                                                    "op": "click",
+                                                                    "child": []
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@class": [
+                                                                        "XCUIElementTypeCollectionView",
+                                                                        "set",
+                                                                        "XCUIElementTypeOther",
+                                                                        "XCUIElementTypeCell"
+                                                                    ],
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": [
+                                                                        "ul",
+                                                                        "div"
+                                                                    ],
+                                                                    "_EA@isScrollable": true,
+                                                                    "x": 0,
+                                                                    "y": 1761,
+                                                                    "width": 1125,
+                                                                    "height": 651,
+                                                                    "op": "swipe",
+                                                                    "_EA@name": "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu3P",
+                                                                    "child": [
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@text": "\u8001\u9ad8\u8207\u5c0f\u8309 Mr & Mrs Gao Gao Lao",
+                                                                            "_EA@name": [
+                                                                                "home:cardMedium",
+                                                                                "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu3P_card0"
+                                                                            ],
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeButton",
+                                                                                "XCUIElementTypeOther",
+                                                                                "XCUIElementTypeCell"
+                                                                            ],
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": [
+                                                                                true,
+                                                                                false
+                                                                            ],
+                                                                            "tag": [
+                                                                                "button",
+                                                                                "div"
+                                                                            ],
+                                                                            "_EA@type": "button",
+                                                                            "x": 546,
+                                                                            "y": 1761,
+                                                                            "width": 450,
+                                                                            "height": 594,
+                                                                            "op": "click",
+                                                                            "child": []
+                                                                        },
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@text": "\u8033\u6735\u501f\u6211 \u99ac\u4e16\u82b3",
+                                                                            "_EA@name": [
+                                                                                "home:cardMedium",
+                                                                                "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu3P_card2"
+                                                                            ],
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeButton",
+                                                                                "XCUIElementTypeOther",
+                                                                                "XCUIElementTypeCell"
+                                                                            ],
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": [
+                                                                                true,
+                                                                                false
+                                                                            ],
+                                                                            "tag": [
+                                                                                "button",
+                                                                                "div"
+                                                                            ],
+                                                                            "_EA@type": "button",
+                                                                            "x": 48,
+                                                                            "y": 1761,
+                                                                            "width": 450,
+                                                                            "height": 594,
+                                                                            "op": "click",
+                                                                            "child": []
+                                                                        },
+                                                                        {
+                                                                            "_EA@isEnabled": true,
+                                                                            "_EA@text": "\u90ed\u5fb7\u7eb2\u4e8e\u8c26\u76f8\u58f0\u4e13\u8f91 xiasong0_0",
+                                                                            "_EA@name": [
+                                                                                "home:cardMedium",
+                                                                                "hubs-spotify:section:0JQ5DAnM3wGh0gz1MXnu3P_card1"
+                                                                            ],
+                                                                            "_EA@class": [
+                                                                                "XCUIElementTypeButton",
+                                                                                "XCUIElementTypeOther",
+                                                                                "XCUIElementTypeCell"
+                                                                            ],
+                                                                            "_EA@isHidden": false,
+                                                                            "_EA@isClickable": [
+                                                                                true,
+                                                                                false
+                                                                            ],
+                                                                            "tag": [
+                                                                                "button",
+                                                                                "div"
+                                                                            ],
+                                                                            "_EA@type": "button",
+                                                                            "x": 1044,
+                                                                            "y": 1761,
+                                                                            "width": 450,
+                                                                            "height": 594,
+                                                                            "op": "click",
+                                                                            "child": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@text": "\u5782\u76f4\u6372\u8ef8, 10\u9801",
+                                                                    "_EA@name": "\u5782\u76f4\u6372\u8ef8, 10\u9801",
+                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                    "_EA@value": "0%",
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 1026,
+                                                                    "y": 132,
+                                                                    "width": 90,
+                                                                    "height": 1887,
+                                                                    "child": []
+                                                                },
+                                                                {
+                                                                    "_EA@isEnabled": true,
+                                                                    "_EA@text": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                                                    "_EA@name": "\u6c34\u5e73\u6372\u8ef8, 1\u9801",
+                                                                    "_EA@class": "XCUIElementTypeOther",
+                                                                    "_EA@value": "0%",
+                                                                    "_EA@isHidden": false,
+                                                                    "_EA@isClickable": false,
+                                                                    "tag": "div",
+                                                                    "x": 0,
+                                                                    "y": 1920,
+                                                                    "width": 1125,
+                                                                    "height": 90,
+                                                                    "child": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 1125,
+                                                            "height": 2187,
+                                                            "_NLP@topic": "list",
+                                                            "child": []
+                                                        },
+                                                        {
+                                                            "_EA@isEnabled": true,
+                                                            "_EA@class": "XCUIElementTypeOther",
+                                                            "_EA@isHidden": true,
+                                                            "_EA@isClickable": false,
+                                                            "tag": "div",
+                                                            "x": 0,
+                                                            "y": 0,
+                                                            "width": 1125,
+                                                            "height": 2187,
+                                                            "_NLP@topic": "list",
+                                                            "child": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u6a19\u7c64\u5217",
+                            "_EA@name": "tabs-container-view-identifier",
+                            "_EA@class": "XCUIElementTypeTabBar",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 2187,
+                            "width": 1125,
+                            "height": 249,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u9996\u9801",
+                                    "_EA@name": "\u9996\u9801",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@value": "1",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 6,
+                                    "y": 2190,
+                                    "width": 363,
+                                    "height": 144,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u641c\u5c0b",
+                                    "_EA@name": "\u641c\u5c0b",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 381,
+                                    "y": 2190,
+                                    "width": 363,
+                                    "height": 144,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u4f60\u7684\u97f3\u6a02\u5eab",
+                                    "_EA@name": "\u4f60\u7684\u97f3\u6a02\u5eab",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 756,
+                                    "y": 2190,
+                                    "width": 363,
+                                    "height": 144,
+                                    "op": "click",
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 2019,
+                    "width": 1125,
+                    "height": 168,
+                    "_EA@name": "barAttachmentContainerViewController container",
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@text": "\u6b4c\u66f2\u4f4d\u7f6e",
+                            "_EA@name": "SPTNowPlayingSliderV2",
+                            "_EA@class": [
+                                "XCUIElementTypeSlider",
+                                "XCUIElementTypeOther"
+                            ],
+                            "_EA@value": "5 \u5206\u9418, 25 \u79d2\uff0c\u5171 5 \u5206\u9418, 57 \u79d2",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": [
+                                "XCUIElementTypeSlider",
+                                "div"
+                            ],
+                            "x": -6,
+                            "y": 2016,
+                            "width": 1137,
+                            "height": 9,
+                            "_NLP@topic": "list",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": true,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 2019,
+                            "width": 1125,
+                            "height": 168,
+                            "_NLP@topic": "list",
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 2025,
+                            "width": 1125,
+                            "height": 162,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": [
+                                        "XCUIElementTypeImage",
+                                        "XCUIElementTypeOther"
+                                    ],
+                                    "_EA@isHidden": [
+                                        true,
+                                        false
+                                    ],
+                                    "_EA@isClickable": false,
+                                    "tag": [
+                                        "XCUIElementTypeImage",
+                                        "div"
+                                    ],
+                                    "x": 0,
+                                    "y": 2025,
+                                    "width": 162,
+                                    "height": 162,
+                                    "_NLP@topic": "list",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@name": [
+                                        "SPTNowPlayingBarContentView",
+                                        "SPTNowPlayingBar"
+                                    ],
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 162,
+                                    "y": 2025,
+                                    "width": 963,
+                                    "height": 162,
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "Stand By Me Oasis",
+                                            "_EA@name": "now-playing-bar-page",
+                                            "_EA@class": [
+                                                "XCUIElementTypeOther",
+                                                "XCUIElementTypeScrollView"
+                                            ],
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": [
+                                                "div",
+                                                "ul"
+                                            ],
+                                            "x": 162,
+                                            "y": 2025,
+                                            "width": 651,
+                                            "height": 162,
+                                            "_EA@isScrollable": true,
+                                            "op": "swipe",
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u9023\u63a5\u81f3\u88dd\u7f6e",
+                                            "_EA@name": "\u9023\u63a5\u81f3\u88dd\u7f6e",
+                                            "_EA@class": "XCUIElementTypeButton",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": true,
+                                            "tag": "button",
+                                            "_EA@type": "button",
+                                            "x": 813,
+                                            "y": 2025,
+                                            "width": 162,
+                                            "height": 162,
+                                            "op": "click",
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u64ad\u653e",
+                                            "_EA@name": "now-playing-bar-play-button",
+                                            "_EA@class": "XCUIElementTypeButton",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": true,
+                                            "tag": "button",
+                                            "_EA@type": "button",
+                                            "x": 975,
+                                            "y": 2025,
+                                            "width": 132,
+                                            "height": 162,
+                                            "op": "click",
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@class": "XCUIElementTypeOther",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "x": 0,
+                                    "y": 2184,
+                                    "width": 1125,
+                                    "height": 3,
+                                    "_NLP@topic": "list",
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": "XCUIElementTypeOther",
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "_NLP@topic": "list",
+            "child": []
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@name": "MainWindowAnimationView",
+            "_EA@class": "XCUIElementTypeOther",
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "_NLP@topic": "list",
+            "child": []
+        }
+    ]
+}

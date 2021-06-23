@@ -1,0 +1,192 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@text": "1010!",
+    "_EA@name": "1010!",
+    "_EA@class": "XCUIElementTypeApplication",
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_NLP@topic": "register",
+    "_FM@topic": "search_page",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": [
+                "ol",
+                "div"
+            ],
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 392,
+                    "y": 233,
+                    "width": 341,
+                    "height": 441,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 118,
+                    "y": 867,
+                    "width": 888,
+                    "height": 368,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 119,
+                    "y": 1248,
+                    "width": 886,
+                    "height": 290,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": [
+                        "XCUIElementTypeButton",
+                        "XCUIElementTypeOther"
+                    ],
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": [
+                        true,
+                        false
+                    ],
+                    "tag": [
+                        "button",
+                        "li"
+                    ],
+                    "op": "click",
+                    "x": 118,
+                    "y": 1680,
+                    "width": 888,
+                    "height": 196,
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "li",
+                    "x": 49,
+                    "y": 2182,
+                    "width": 1013,
+                    "height": 202,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 49,
+                            "y": 2182,
+                            "width": 193,
+                            "height": 202,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 896,
+                            "y": 2207,
+                            "width": 166,
+                            "height": 166,
+                            "child": []
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeButton",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": true,
+                            "tag": "button",
+                            "op": "click",
+                            "x": 343,
+                            "y": 2230,
+                            "width": 437,
+                            "height": 143,
+                            "_EA@text": "1016!)",
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "child": []
+        }
+    ]
+}

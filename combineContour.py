@@ -150,10 +150,10 @@ def combineContour(contourInfo_new, sizeOG):
                     and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
                     and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
 
-            if c[0][0]==74:
+            if c[0][0]==819:
                 pass
-                # print(i,c)
-                # print(j,d)
+                print(i,c)
+                print(j,d)
                 
 
 

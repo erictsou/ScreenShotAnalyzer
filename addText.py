@@ -148,6 +148,26 @@ def addText(c, img_gray):
     
     #c.append([max(counts), img_crop.size, len(unique)])
 
+def removeSymbols(contourInfo):
+    ##remove abnormal symbol text
+    sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
+            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+    alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    alpha = list(alpha_str)
+
+    for c in contourInfo:
+        if not(False in (s in sym for s in c[2][0])) \
+            or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+            or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]:
+            c[2] = ['', 0]
+        for i in range(10):
+            num = [str(i)]
+            if not(False in (s in sym+num for s in c[2][0])) and len(c[2][0])<=2:
+                c[2] = ['', 0]
+
+    return contourInfo
+
+
 
 
 

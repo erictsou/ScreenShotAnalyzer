@@ -50,12 +50,12 @@ def getContourInfo(gray_edges):
     #合併hier和size [[輪廓編號, 輪廓hier資訊],[輪廓座標]]
     for c in contourInfo.copy():
         x,y,w,h = c[1]
-        if (w/h<=0.15 and h<=height/4) or w/h<=0.05 or (h/w<=0.15 and w<=width/4) or h/w<=0.05:
+        if (w/h<=0.15 and h<=height/4) or w/h<=0.08 or (h/w<=0.15 and w<=width/4) or h/w<=0.08:
             contourInfo.remove(c)
             #print('remove:', c)
 
             #去掉直長條或橫長條
-    print('number of contours after filted by size:', len(contourInfo))
+    print('number of contours after filted by shape:', len(contourInfo))
 
     return result, hierarchy, contourInfo
 
@@ -84,7 +84,7 @@ def removeImgNoise(contourInfo, img_gray):
                         
                         if d in contourInfo: 
                             contourInfo.remove(d)
-                            # print('remove:',d,f)
+    #                         print('remove:',d,f)
     # for c,e in zip(temp, pixelInfo):
     #     print(c,e)
                         

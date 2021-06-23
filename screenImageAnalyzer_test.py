@@ -85,7 +85,7 @@ class screenImageAnalyzer:
         mean_canny = np.average(gray_edges)
         if mean_canny<=7:
             i=7
-        elif 7<mean_canny<15:
+        elif 7<mean_canny<17:
             i=5
         else:
             i=3
@@ -116,6 +116,7 @@ class screenImageAnalyzer:
             api = self.tesserocr_queue.get(block=True)
             api.End()
 
+        contourInfo = self.removeSymbols(contourInfo)
         print("Add Text Info")
 
         contourInfo_new = contourInfo.copy()
@@ -194,11 +195,7 @@ class screenImageAnalyzer:
             coordinate = [x_low, y_low, x_upp-x_low, y_upp-y_low]
             secondLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
                         "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
-            
-            sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
-            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
-            alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            alpha = list(alpha_str)
+
             for c in second:
                 #同層下一個輪廓的序號、同層上一個輪廓的序號、子輪廓的序號、父輪廓的序號。
                 #[[輪廓編號, 輪廓hier資訊],[輪廓座標],[輪廓文字,confidence]]
@@ -207,10 +204,7 @@ class screenImageAnalyzer:
                 #如果ocr confidence >= 80就加入xml dict?
                 
                 if c[0][1][3]==-1 or (c[0][1][3] != d[0][0] for d in info):
-                    if c[2][1]>=70 and \
-                        not(not(False in (s in sym for s in c[2][0])) \
-                        or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-                        or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]): 
+                    if c[2][1]>=70: 
                         inner_1st = self.addDict("XCUIElementTypeButton","button",c[2][0],c[1])
                     else: 
                         inner_1st = self.addDict("XCUIElementTypeButton","button","",c[1])
@@ -220,10 +214,7 @@ class screenImageAnalyzer:
                     for i_2nd, c_2nd in enumerate(second):
                         
                         if c[0][0]==c_2nd[0][1][3]:
-                            if c[2][1]>=70 and \
-                                not(not(False in (s in sym for s in c[2][0])) \
-                                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-                                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+                            if c[2][1]>=70:
                                 inner_2nd = self.addDict("XCUIElementTypeButton","button",c_2nd[2][0],c_2nd[1])
                             else: 
                                 inner_2nd = self.addDict("XCUIElementTypeButton","button","",c_2nd[1])
@@ -233,10 +224,7 @@ class screenImageAnalyzer:
                             for i_3rd, c_3rd in enumerate(second):
                         
                                 if c_2nd[0][0]==c_3rd[0][1][3]:
-                                    if c[2][1]>=70 and \
-                                        not(not(False in (s in sym for s in c[2][0])) \
-                                        or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-                                        or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]):
+                                    if c[2][1]>=70:
                                         inner_3rd= self.addDict("XCUIElementTypeButton","button",c_3rd[2][0],c_3rd[1])
                                     else: 
                                         inner_3rd = self.addDict("XCUIElementTypeButton","button","",c_3rd[1])
@@ -246,10 +234,7 @@ class screenImageAnalyzer:
                                     for i_4th, c_4th in enumerate(second):
                                         
                                         if c_3rd[0][0]==c_4th[0][1][3]:
-                                            if c[2][1]>=70 and \
-                                                not(not(False in (s in sym for s in c[2][0])) \
-                                                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-                                                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]): 
+                                            if c[2][1]>=70: 
                                                 inner_4th = self.addDict("XCUIElementTypeButton","button",c_4th[2][0],c_4th[1])
                                             else: 
                                                 inner_4th = self.addDict("XCUIElementTypeButton","button","",c_4th[1])
@@ -746,6 +731,26 @@ class screenImageAnalyzer:
                     c = contourInfo_new[i]
 
         return contourInfo_new
+
+    def removeSymbols(self, contourInfo):
+        ##remove abnormal symbol text
+        sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
+                '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+        alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        alpha = list(alpha_str)
+
+        for c in contourInfo:
+            if not(False in (s in sym for s in c[2][0])) \
+                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
+                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]:
+                c[2] = ['', 0]
+            for i in range(10):
+                num = [str(i)]
+                if not(False in (s in sym+num for s in c[2][0])) and len(c[2][0])<=2:
+                    c[2] = ['', 0]
+
+        return contourInfo
+    
     def addText(self, c, img_gray):
         x,y,w,h = c[1]
         flag=0
@@ -957,7 +962,7 @@ class screenImageAnalyzer:
                 contourInfo.remove(c)
 
                 #去掉直長條或橫長條
-        print('number of contours after filted by size:', len(contourInfo))
+        print('number of contours after filted by shape:', len(contourInfo))
 
         return contourInfo
     def removeImgNoise(self, contourInfo, img_gray, sizeOG):
