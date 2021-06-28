@@ -1,0 +1,380 @@
+{
+    "_EA@isEnabled": true,
+    "_EA@text": "Chrome",
+    "_EA@name": "Chrome",
+    "_EA@class": "XCUIElementTypeApplication",
+    "_EA@isHidden": false,
+    "_EA@isClickable": false,
+    "tag": "div",
+    "x": 0,
+    "y": 0,
+    "width": 1125,
+    "height": 2436,
+    "_FM@topic": "search_page",
+    "child": [
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": false,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "_EA@name": "0",
+            "child": [
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": true,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": -1125,
+                    "y": -2436,
+                    "width": 3375,
+                    "height": 7308,
+                    "_NLP@topic": "search",
+                    "child": []
+                },
+                {
+                    "_EA@isEnabled": true,
+                    "_EA@class": "XCUIElementTypeOther",
+                    "_EA@isHidden": false,
+                    "_EA@isClickable": false,
+                    "tag": "div",
+                    "x": 0,
+                    "y": 162,
+                    "width": 1125,
+                    "height": 2274,
+                    "child": [
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@name": "\u66f8\u7c64",
+                            "_EA@class": "XCUIElementTypeNavigationBar",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 162,
+                            "width": 1125,
+                            "height": 480,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u5b8c\u6210",
+                                    "_EA@name": "kBookmarkHomeNavigationBarDoneButtonIdentifier",
+                                    "_EA@class": "XCUIElementTypeButton",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "button",
+                                    "_EA@type": "button",
+                                    "x": 972,
+                                    "y": 180,
+                                    "width": 129,
+                                    "height": 132,
+                                    "op": "click",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u66f8\u7c64",
+                                    "_EA@name": "\u66f8\u7c64",
+                                    "_EA@class": "XCUIElementTypeStaticText",
+                                    "_EA@value": "\u66f8\u7c64",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "div",
+                                    "_EA@type": "text",
+                                    "x": 45,
+                                    "y": 333,
+                                    "width": 210,
+                                    "height": 141,
+                                    "_NLP@topic": "search",
+                                    "child": []
+                                },
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@text": "\u641c\u5c0b",
+                                    "_EA@name": "\u641c\u5c0b",
+                                    "_EA@class": "XCUIElementTypeSearchField",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": true,
+                                    "tag": "textInput",
+                                    "_EA@type": "text",
+                                    "x": 48,
+                                    "y": 489,
+                                    "width": 1029,
+                                    "height": 108,
+                                    "op": "click",
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "_EA@isEnabled": true,
+                            "_EA@class": "XCUIElementTypeOther",
+                            "_EA@isHidden": false,
+                            "_EA@isClickable": false,
+                            "tag": "div",
+                            "x": 0,
+                            "y": 162,
+                            "width": 1125,
+                            "height": 2274,
+                            "child": [
+                                {
+                                    "_EA@isEnabled": true,
+                                    "_EA@name": "kBookmarkHomeTableViewIdentifier",
+                                    "_EA@class": "XCUIElementTypeTable",
+                                    "_EA@isHidden": false,
+                                    "_EA@isClickable": false,
+                                    "tag": "ul",
+                                    "_EA@isScrollable": true,
+                                    "x": 0,
+                                    "y": 642,
+                                    "width": 1125,
+                                    "height": 1794,
+                                    "op": "swipe",
+                                    "child": [
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 642,
+                                            "width": 1125,
+                                            "height": 30,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u884c\u52d5\u7248\u66f8\u7c64",
+                                            "_EA@name": "\u884c\u52d5\u7248\u66f8\u7c64",
+                                            "_EA@class": "XCUIElementTypeCell",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 672,
+                                            "width": 1125,
+                                            "height": 153,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeTextField",
+                                                    "_EA@value": "\u884c\u52d5\u7248\u66f8\u7c64",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": true,
+                                                    "tag": "textInput",
+                                                    "_EA@type": "text",
+                                                    "x": 165,
+                                                    "y": 711,
+                                                    "width": 819,
+                                                    "height": 75,
+                                                    "op": "click",
+                                                    "_EA@text": "\u884c\u52d5\u7248\u66f8\u7c64",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 168,
+                                                    "y": 819,
+                                                    "width": 957,
+                                                    "height": 6,
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeImage",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "XCUIElementTypeImage",
+                                                    "x": 1035,
+                                                    "y": 726,
+                                                    "width": 42,
+                                                    "height": 42,
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u66f8\u7c64\u5217",
+                                            "_EA@name": "\u66f8\u7c64\u5217",
+                                            "_EA@class": "XCUIElementTypeCell",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 822,
+                                            "width": 1125,
+                                            "height": 153,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeTextField",
+                                                    "_EA@value": "\u66f8\u7c64\u5217",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": true,
+                                                    "tag": "textInput",
+                                                    "_EA@type": "text",
+                                                    "x": 165,
+                                                    "y": 861,
+                                                    "width": 819,
+                                                    "height": 75,
+                                                    "op": "click",
+                                                    "_EA@text": "\u66f8\u7c64\u5217",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 168,
+                                                    "y": 972,
+                                                    "width": 957,
+                                                    "height": 3,
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeImage",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "XCUIElementTypeImage",
+                                                    "x": 1035,
+                                                    "y": 876,
+                                                    "width": 42,
+                                                    "height": 45,
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@text": "\u5176\u4ed6\u66f8\u7c64",
+                                            "_EA@name": "\u5176\u4ed6\u66f8\u7c64",
+                                            "_EA@class": "XCUIElementTypeCell",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 972,
+                                            "width": 1125,
+                                            "height": 153,
+                                            "child": [
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeTextField",
+                                                    "_EA@value": "\u5176\u4ed6\u66f8\u7c64",
+                                                    "_EA@isHidden": false,
+                                                    "_EA@isClickable": true,
+                                                    "tag": "textInput",
+                                                    "_EA@type": "text",
+                                                    "x": 165,
+                                                    "y": 1011,
+                                                    "width": 819,
+                                                    "height": 78,
+                                                    "op": "click",
+                                                    "_EA@text": "\u5176\u4ed6\u66f8\u7c64",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeOther",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "div",
+                                                    "x": 0,
+                                                    "y": 1122,
+                                                    "width": 1125,
+                                                    "height": 3,
+                                                    "child": []
+                                                },
+                                                {
+                                                    "_EA@isEnabled": true,
+                                                    "_EA@class": "XCUIElementTypeImage",
+                                                    "_EA@isHidden": true,
+                                                    "_EA@isClickable": false,
+                                                    "tag": "XCUIElementTypeImage",
+                                                    "x": 1035,
+                                                    "y": 1026,
+                                                    "width": 42,
+                                                    "height": 45,
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 1125,
+                                            "width": 1125,
+                                            "height": 3,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 1128,
+                                            "width": 1125,
+                                            "height": 30,
+                                            "child": []
+                                        },
+                                        {
+                                            "_EA@isEnabled": true,
+                                            "_EA@class": "XCUIElementTypeOther",
+                                            "_EA@isHidden": false,
+                                            "_EA@isClickable": false,
+                                            "tag": "div",
+                                            "x": 0,
+                                            "y": 1158,
+                                            "width": 1125,
+                                            "height": 3,
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "_EA@isEnabled": true,
+            "_EA@class": [
+                "XCUIElementTypeOther",
+                "XCUIElementTypeWindow"
+            ],
+            "_EA@isHidden": true,
+            "_EA@isClickable": false,
+            "tag": "div",
+            "x": 0,
+            "y": 0,
+            "width": 1125,
+            "height": 2436,
+            "_NLP@topic": "search",
+            "child": []
+        }
+    ]
+}

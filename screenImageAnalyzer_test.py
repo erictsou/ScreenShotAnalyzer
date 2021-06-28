@@ -33,7 +33,7 @@ if platform.system() == 'Windows':
 class screenImageAnalyzer: 
     def __init__(self): 
         
-        self.langs = 'eng+chi_tra+chi_sim'
+        self.langs = 'chi_tra+eng+chi_sim'
         # self.langs = 'eng+chi_tra'
         #self.ocr_config = '--psm 6' #for pytesseract
         self.ocr_config = 6 #for tesserocr
@@ -99,14 +99,8 @@ class screenImageAnalyzer:
 
         img_gray = cv2.fastNlMeansDenoising(gray)
 
-        #self.api = tesserocr.PyTessBaseAPI(lang='eng+chi_tra',psm=6)
-        # with concurrent.futures.ThreadPoolExecutor() as executor:
-        #     futures = {executor.submit(self.addText, c, img_gray): c for c in contourInfo}
-        #     concurrent.futures.wait(futures)
-        #contourInfo = self.addTextInfo(contourInfo, img_gray)
-
         for _ in range(self.NUM_THREADS):
-            self.tesserocr_queue.put(tesserocr.PyTessBaseAPI(lang=self.langs,psm=self.ocr_config))
+            self.tesserocr_queue.put(tesserocr.PyTessBaseAPI(lang=self.langs,psm=self.ocr_config,oem=1))
 
         with concurrent.futures.ThreadPoolExecutor(self.NUM_THREADS) as executor:
             futures = {executor.submit(self.addText, c, img_gray): c for c in contourInfo}
@@ -426,7 +420,7 @@ class screenImageAnalyzer:
 
                         temp.append([min(x1,x2),min(y1,y2),width,height])
                         if c[2][1]>=88 and d[2][1]>=88:
-                            temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                            temp.append([d[2][0]+' '+c[2][0], c[2][1]])
                         else:
                             temp.append(c[2] if c[2][1]>d[2][1] else d[2])
                         #左右關係的兩邊文字要相連
@@ -497,7 +491,10 @@ class screenImageAnalyzer:
 
 
                         temp.append([min(x1,x2),min(y1,y2),width,height])
-                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                        if c[2][1]>=88 and d[2][1]>=88:
+                            temp.append([d[2][0]+' '+c[2][0], c[2][1]])
+                        else:
+                            temp.append(c[2] if c[2][1]>d[2][1] else d[2])
                         #temp[0][1][3]= -1
 
                         if d in contourInfo_new: contourInfo_new.remove(d)
@@ -531,7 +528,10 @@ class screenImageAnalyzer:
 
 
                         temp.append([min(x1,x2),min(y1,y2),width,height])
-                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                        if c[2][1]>=88 and d[2][1]>=88:
+                            temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                        else:
+                            temp.append(c[2] if c[2][1]>d[2][1] else d[2])
 
                         #temp[0][1][3]= -1
 
@@ -734,21 +734,35 @@ class screenImageAnalyzer:
 
     def removeSymbols(self, contourInfo):
         ##remove abnormal symbol text
-        sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
-                '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+        sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/','\\', ':', ';', \
+                '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®','™']
         alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         alpha = list(alpha_str)
-
+        
         for c in contourInfo:
-            if not(False in (s in sym for s in c[2][0])) \
-                or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-                or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]:
+            print(c)
+            copy = c[2].copy()
+            copy[0] = copy[0].strip().replace(" ","")
+
+            if not(False in (s in sym for s in copy[0])) \
+                or (not(False in (s in alpha+sym for s in copy[0])) and len(copy[0])<=2) \
+                or len(copy[0])<=1 or (copy[0]==len(copy[0])*copy[0][0] and not(u'\u4e00'<copy[0][0]<u'\u9fff')):
                 c[2] = ['', 0]
             for i in range(10):
                 num = [str(i)]
-                if not(False in (s in sym+num for s in c[2][0])) and len(c[2][0])<=2:
+                if not(False in (s in sym+num for s in copy[0])) and len(copy[0])<=2:
                     c[2] = ['', 0]
+            
 
+            text = list(c[2][0])
+            for i, x in enumerate(text):
+                if x == " " and i!=len(text)-1:
+                    if text[i-1]>u'\u4e00' and text[i-1]<u'\u9fff' and text[i+1]>u'\u4e00' and text[i+1]<u'\u9fff':
+                        text[i]=''    
+                elif x in sym:
+                    text[i]=''
+            c[2][0] = ''.join(text)
+                
         return contourInfo
     
     def addText(self, c, img_gray):
@@ -788,6 +802,16 @@ class screenImageAnalyzer:
 
             ocrResult, conf = self.getOcrResult(img_crop)
 
+            if conf<=70:
+                img_crop_not = cv2.bitwise_not(img_crop)
+                ocrResult_not, conf_not = self.getOcrResult(img_crop_not)
+                
+                if conf_not> conf:
+                    ocrResult = ocrResult_not
+                    conf = conf_not
+                    img_crop = img_crop_not
+            ##get complement image and do ocr again
+
             if conf==0: flag+=1 
             else: flag=0
             if conf<=70:
@@ -800,10 +824,10 @@ class screenImageAnalyzer:
                 ocrResult2,conf2 = self.getOcrResult(img_crop_dil)
 
 
-                if conf1>=conf2:
+                if conf1>=conf2 and conf1>=conf:
                     ocrResult = ocrResult1
                     conf = conf1
-                else:
+                elif conf2>=conf1 and conf2>=conf:
                     ocrResult = ocrResult2
                     conf = conf2
                     ##conf<70 then dilate or erode
@@ -816,73 +840,73 @@ class screenImageAnalyzer:
         c.append([ocrResult,conf])
 
 
-    def addTextInfo(self, contourInfo, img_gray):
-        for i, c in enumerate(contourInfo):
-            x,y,w,h = c[1]
-            flag=0
-            for j in range(1):
-                ratio = [h/(h+w), w/(h+w)]
-                s = 0.1*j*w if w>h else 0.1*j*h
-                ratio = [int(s*k) for k in ratio]
-                y_low = y-ratio[0] if y-ratio[0]>=0 else 0
-                y_upp = y+h+ratio[0] if y+h+ratio[0]<img_gray.shape[0] else img_gray.shape[0]
-                x_low = x-ratio[1] if x-ratio[1]>=0 else 0
-                x_upp = x+w+ratio[1] if x+w+ratio[1]<img_gray.shape[1] else img_gray.shape[1]
-                img_crop = img_gray[y_low:y_upp, x_low:x_upp].copy()
-                hc,wc = img_crop.shape
-                if j==0: mean_crop = np.average(img_crop)
-                if mean_crop <= 140:
-                    ret,img_crop = cv2.threshold(img_crop,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-                else:
-                    ret,img_crop = cv2.threshold(img_crop,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-                ##binarize
+    # def addTextInfo(self, contourInfo, img_gray):
+    #     for i, c in enumerate(contourInfo):
+    #         x,y,w,h = c[1]
+    #         flag=0
+    #         for j in range(1):
+    #             ratio = [h/(h+w), w/(h+w)]
+    #             s = 0.1*j*w if w>h else 0.1*j*h
+    #             ratio = [int(s*k) for k in ratio]
+    #             y_low = y-ratio[0] if y-ratio[0]>=0 else 0
+    #             y_upp = y+h+ratio[0] if y+h+ratio[0]<img_gray.shape[0] else img_gray.shape[0]
+    #             x_low = x-ratio[1] if x-ratio[1]>=0 else 0
+    #             x_upp = x+w+ratio[1] if x+w+ratio[1]<img_gray.shape[1] else img_gray.shape[1]
+    #             img_crop = img_gray[y_low:y_upp, x_low:x_upp].copy()
+    #             hc,wc = img_crop.shape
+    #             if j==0: mean_crop = np.average(img_crop)
+    #             if mean_crop <= 140:
+    #                 ret,img_crop = cv2.threshold(img_crop,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+    #             else:
+    #                 ret,img_crop = cv2.threshold(img_crop,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+    #             ##binarize
                     
-                if y_low!=0: 
-                    img_crop[0:ratio[0],:] = 255
-                    img_crop[ratio[0]+h:hc,:] = 255
-                else: 
-                    img_crop[0:y,:] = 255
-                    img_crop[y+h:hc,:] = 255
+    #             if y_low!=0: 
+    #                 img_crop[0:ratio[0],:] = 255
+    #                 img_crop[ratio[0]+h:hc,:] = 255
+    #             else: 
+    #                 img_crop[0:y,:] = 255
+    #                 img_crop[y+h:hc,:] = 255
                     
-                if x_low!=0: 
-                    img_crop[:,0:ratio[1]] = 255
-                    img_crop[:,ratio[1]+w:wc] = 255
-                else: 
-                    img_crop[:,0:x] = 255
-                    img_crop[:,x+w:wc] = 255
-                ##zoom out and set border pixels to 255
+    #             if x_low!=0: 
+    #                 img_crop[:,0:ratio[1]] = 255
+    #                 img_crop[:,ratio[1]+w:wc] = 255
+    #             else: 
+    #                 img_crop[:,0:x] = 255
+    #                 img_crop[:,x+w:wc] = 255
+    #             ##zoom out and set border pixels to 255
 
-                ocrResult, conf = self.getOcrResult(img_crop)
+    #             ocrResult, conf = self.getOcrResult(img_crop)
 
-                if conf==0: flag+=1 
-                else: flag=0
-                if conf<=70:
-                    kernel = np.ones((3,3), np.uint8)
-                    img_crop_ero = cv2.erode(img_crop, kernel, iterations = 1)
-                    ocrResult1,conf1 = self.getOcrResult(img_crop_ero)
-
-
-                    img_crop_dil = cv2.dilate(img_crop, kernel, iterations = 1)
-                    ocrResult2,conf2 = self.getOcrResult(img_crop_dil)
+    #             if conf==0: flag+=1 
+    #             else: flag=0
+    #             if conf<=70:
+    #                 kernel = np.ones((3,3), np.uint8)
+    #                 img_crop_ero = cv2.erode(img_crop, kernel, iterations = 1)
+    #                 ocrResult1,conf1 = self.getOcrResult(img_crop_ero)
 
 
-                    if conf1>=conf2:
-                        ocrResult = ocrResult1
-                        conf = conf1
-                    else:
-                        ocrResult = ocrResult2
-                        conf = conf2
-                        ##conf<70 then dilate or erode
+    #                 img_crop_dil = cv2.dilate(img_crop, kernel, iterations = 1)
+    #                 ocrResult2,conf2 = self.getOcrResult(img_crop_dil)
 
-                    if conf==0: flag+=1 
-                    else: flag=0
+
+    #                 if conf1>=conf2:
+    #                     ocrResult = ocrResult1
+    #                     conf = conf1
+    #                 else:
+    #                     ocrResult = ocrResult2
+    #                     conf = conf2
+    #                     ##conf<70 then dilate or erode
+
+    #                 if conf==0: flag+=1 
+    #                 else: flag=0
                 
-                if conf>=95 or (conf>=80 and j>=3) or (conf>=70 and j>=10) or flag==4: break
+    #             if conf>=95 or (conf>=80 and j>=3) or (conf>=70 and j>=10) or flag==4: break
             
-            c.append([ocrResult,conf])
+    #         c.append([ocrResult,conf])
 
 
-        return contourInfo
+    #     return contourInfo
         
 
 
@@ -897,7 +921,7 @@ class screenImageAnalyzer:
             api.SetImage(pil)
             ocrResult = api.GetUTF8Text()
             conf = api.MeanTextConf()
-            ocrResult = ocrResult.strip().replace(" ","").replace("\n"," ")
+            ocrResult = ocrResult.strip().replace("\n"," ")
         except queue.Empty:
             print('Empty exception caught!')
             return None

@@ -22,7 +22,7 @@ def getOcrResult(img):
         api.SetImage(pil)
         ocrResult = api.GetUTF8Text()
         conf = api.MeanTextConf()
-        ocrResult = ocrResult.strip().replace(" ","").replace("\n"," ")
+        ocrResult = ocrResult.strip().replace("\n"," ")
     except queue.Empty:
         print('Empty exception caught!')
         return None
@@ -112,10 +112,21 @@ def addText(c, img_gray):
         ocrResult, conf,t_num = getOcrResult(img_crop)
         ##直接切割圖片後各自辨識
             
-
+        if conf<=70:
+            img_crop_not = cv2.bitwise_not(img_crop)
+            ocrResult_not, conf_not,t_num = getOcrResult(img_crop_not)
+            
+            if conf_not> conf:
+                print('do complement')
+                ocrResult = ocrResult_not
+                conf = conf_not
+                img_crop = img_crop_not
+        ##get complement image and do ocr again
+        ##辨識不佳的話可以試試看
         
         if conf==0: flag+=1 
         else: flag=0
+
         if conf<=70:
             kernel = np.ones((3,3), np.uint8)
             img_crop_ero = cv2.erode(img_crop, kernel, iterations = 1)
@@ -126,11 +137,11 @@ def addText(c, img_gray):
             ocrResult2,conf2,t_num = getOcrResult(img_crop_dil)
 
 
-            if conf1>=conf2:
+            if conf1>=conf2 and conf1>=conf:
                 ocrResult = ocrResult1
                 conf = conf1
                 print('get text thicker')
-            else:
+            elif conf2>=conf1 and conf2>=conf:
                 ocrResult = ocrResult2
                 conf = conf2
                 print('get text thinner')
@@ -150,21 +161,34 @@ def addText(c, img_gray):
 
 def removeSymbols(contourInfo):
     ##remove abnormal symbol text
-    sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', \
-            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®']
+    sym = ['!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/','\\', ':', ';', \
+            '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~', '©', '®','™']
     alpha_str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     alpha = list(alpha_str)
-
+    
     for c in contourInfo:
-        if not(False in (s in sym for s in c[2][0])) \
-            or (not(False in (s in alpha+sym for s in c[2][0])) and len(c[2][0])<=2) \
-            or len(c[2][0])<=1 or c[2][0]==len(c[2][0])*c[2][0][0]:
+        copy = c[2].copy()
+        copy[0] = copy[0].strip().replace(" ","")
+
+        if not(False in (s in sym for s in copy[0])) \
+            or (not(False in (s in alpha+sym for s in copy[0])) and len(copy[0])<=2) \
+            or len(copy[0])<=1 or (copy[0]==len(copy[0])*copy[0][0] and not(u'\u4e00'<copy[0][0]<u'\u9fff')):
             c[2] = ['', 0]
         for i in range(10):
             num = [str(i)]
-            if not(False in (s in sym+num for s in c[2][0])) and len(c[2][0])<=2:
+            if not(False in (s in sym+num for s in copy[0])) and len(copy[0])<=2:
                 c[2] = ['', 0]
+        
 
+        text = list(c[2][0])
+        for i, x in enumerate(text):
+            if x == " " and i!=len(text)-1:
+                if text[i-1]>u'\u4e00' and text[i-1]<u'\u9fff' and text[i+1]>u'\u4e00' and text[i+1]<u'\u9fff':
+                    text[i]=''    
+            elif x in sym:
+                text[i]=''
+        c[2][0] = ''.join(text)
+            
     return contourInfo
 
 

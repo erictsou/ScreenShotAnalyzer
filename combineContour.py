@@ -67,8 +67,6 @@ def combineContour(contourInfo_new, sizeOG):
                     width = w2
                     height = h2
                     temp.append([min(x1,x2),min(y1,y2),width,height])
-                    
-                    
                     temp.append(c[2] if c[2][1]>d[2][1] else d[2])
                     #temp[0][1][3]= -1
 
@@ -142,18 +140,20 @@ def combineContour(contourInfo_new, sizeOG):
                     and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=w1/w2<=1.8 and 0<=h1-h2<=f) or (1<=w2/w1<=1.8 and 0<=h2-h1<=f)) \
                             and abs(h1+w1-(h2+w2))<=6*f and (h1/w1<=3 and w1/h1<=3) and (y2 - (y1+h1))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                     and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
-                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
+                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) \
+                    and not(w2>10*f and h2>10*f and abs(w1-w2)<4*f) 
             
             bottom = (cbl_dtl<=f*3.5 or cbr_dtr<=f*3.5 or ((w2<=w1 or abs(mid_x1-mid_x2)<=f) and (y1 - (y2+h2))<=f*3) or y1<y2+h2) \
                     and not((abs(h1/w1 - h2/w2)<=0.05 or (abs(h1/w1 - h2/w2)<=0.15 and h1+w1<=15*f) or (1<=w1/w2<=1.8 and 0<=h1-h2<=f) or (1<=w2/w1<=1.8 and 0<=h2-h1<=f)) \
                             and abs(h1+w1-(h2+w2))<=6*f and (h1/w1<=3 and w1/h1<=3) and (y1 - (y2+h2))>=f*0.5 and h1>=f*3 and w1>=f*3) \
                     and (abs(w1-w2)<f*22) and ((w1<f*21) or (w2<f*21)) \
-                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) 
+                    and (abs(mid_x1-mid_x2)<=f*5 or (abs(x1-x2)<=f and abs(mid_x1-mid_x2)<=f*10) or (abs(x1+w1-(x2+h2))<=f and abs(mid_x1-mid_x2)<=f*10)) \
+                    and not(w1>10*f and h1>10*f and abs(w1-w2)<4*f) 
 
             if c[0][0]==819:
                 pass
-                print(i,c)
-                print(j,d)
+                # print(i,c)
+                # print(j,d)
                 
 
 
@@ -184,7 +184,7 @@ def combineContour(contourInfo_new, sizeOG):
 
                     temp.append([min(x1,x2),min(y1,y2),width,height])
                     if c[2][1]>=88 and d[2][1]>=88:
-                        temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                        temp.append([d[2][0]+' '+c[2][0], c[2][1]])
                     else:
                         temp.append(c[2] if c[2][1]>d[2][1] else d[2])
                     #左右關係的兩邊文字要相連
@@ -255,7 +255,10 @@ def combineContour(contourInfo_new, sizeOG):
 
 
                     temp.append([min(x1,x2),min(y1,y2),width,height])
-                    temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([d[2][0]+' '+c[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
                     #temp[0][1][3]= -1
 
                     if d in contourInfo_new: contourInfo_new.remove(d)
@@ -289,7 +292,10 @@ def combineContour(contourInfo_new, sizeOG):
 
 
                     temp.append([min(x1,x2),min(y1,y2),width,height])
-                    temp.append(c[2] if c[2][1]>d[2][1] else d[2])
+                    if c[2][1]>=88 and d[2][1]>=88:
+                        temp.append([c[2][0]+' '+d[2][0], c[2][1]])
+                    else:
+                        temp.append(c[2] if c[2][1]>d[2][1] else d[2])
 
                     #temp[0][1][3]= -1
 

@@ -110,7 +110,7 @@ def allProcess(IMAGE_NUMBER, experiment):
 
 
     for t_num in range(NUM_THREADS):
-        tesserocr_queue.put([t_num, tesserocr.PyTessBaseAPI(lang='eng+chi_tra',psm=6)])
+        tesserocr_queue.put([t_num, tesserocr.PyTessBaseAPI(lang='chi_tra+eng',psm=6,oem=1)])
 
     start = time.time()
 

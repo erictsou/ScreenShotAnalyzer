@@ -66,7 +66,7 @@ def generateJsonDict(filename, img, info, sizeOG, clone6):
                 y_upp = yc+hc
 
         coordinate = [x_low, y_low, x_upp-x_low, y_upp-y_low]
-        cv2.rectangle(clone6, (x_low, y_low), (x_upp, y_upp), (0, 255, 0), 2)
+        cv2.rectangle(clone6, (x_low, y_low), (x_upp, y_upp), (0, 0, 255), 4)
         secondLayer = {"_EA@isEnabled": True, "_EA@class": "XCUIElementTypeOther", "_EA@isHidden": False, "_EA@isClickable": False, 
                     "tag": "li", "_TaaD::byVision": True, "x": coordinate[0], "y": coordinate[1], "width": coordinate[2], "height": coordinate[3], "child":[]}
         
